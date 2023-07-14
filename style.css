@@ -7,7 +7,7 @@
 :root {
   /* Use variables created with var() */
   --color-button: rgb(230, 0, 18);
-  --hover-color-button: rgb(180, 0, 18);
+  --hover-color-button: rgb(172, 0, 13);
   --font-color-main: rgb(72, 72, 72);
   --color-white: rgb(255, 255, 255);
   --carrousel-arrow-background-color: rgba(72, 72, 72, 0.234);
@@ -20,11 +20,12 @@
   --font-size-xl: 1.75rem;
 }
 
-html, body {
+html,
+body {
   height: 100vh;
   width: auto;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   color: var(--background-color-main);
   font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "sans-serif";
   font-size: 16px;
@@ -33,49 +34,63 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-section.main_div-container {
-  display: flex;
-  flex-flow: column wrap;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  font-weight: 700;
+  letter-spacing: 0px;
+  margin: 0px 0px 1em;
+  padding: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+section.main-container_div {
   position: relative;
   padding-top: 3rem;
   padding-bottom: 3rem;
   width: 100%;
   scroll-margin-top: 120px;
 }
-section.main_div-container div.dimensions_div-container {
+section.main-container_div div.dimensions-container_div {
   max-width: 71.5rem;
   margin-left: auto;
   margin-right: auto;
 }
-section.main_div-container div.dimensions_div-container div.h2-div-a-containers_grid {
-  width: 100%;
+section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a {
   display: grid;
-  margin: 22px;
+  justify-items: start;
   grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
 }
-section.main_div-container div.dimensions_div-container div.h2-div-a-containers_grid div.h2-container {
+section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a h2.letters_news-content {
   font-weight: 700;
-  margin: 0;
-  height: 4rem;
+  margin-block: 0;
   line-height: 1.35;
+  font-size: var(--font-size-xl);
 }
-section.main_div-container div.dimensions_div-container div.h2-div-a-containers_grid div.divcards-container-grid {
+section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  border: solid 2px gray;
 }
-section.main_div-container div.dimensions_div-container div.h2-div-a-containers_grid div.divcards-container-grid div.big-card-line1 {
+section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.grid-item_bigcard1 {
   display: grid;
   grid-column: 1/3;
-  border: solid 2px gray;
 }
-section.main_div-container div.dimensions_div-container div.h2-div-a-containers_grid div.divcards-container-grid div.big-card-line3 {
+section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.grid-item_bigcard2 {
   display: grid;
   grid-column: 3/5;
-  border: solid 2px gray;
 }
-section.main_div-container div.dimensions_div-container div.h2-div-a-containers_grid div.divcards-container-grid div.mini-card-1 {
+section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard3 {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -83,9 +98,8 @@ section.main_div-container div.dimensions_div-container div.h2-div-a-containers_
   justify-content: flex-end;
   position: relative;
   border-radius: 0.25rem;
-  border: solid 2px gray;
 }
-section.main_div-container div.dimensions_div-container div.h2-div-a-containers_grid div.divcards-container-grid div.mini-card-2 {
+section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard4 {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -93,9 +107,8 @@ section.main_div-container div.dimensions_div-container div.h2-div-a-containers_
   justify-content: flex-end;
   position: relative;
   border-radius: 0.25rem;
-  border: solid 2px gray;
 }
-section.main_div-container div.dimensions_div-container div.h2-div-a-containers_grid div.divcards-container-grid div.mini-card-3 {
+section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard5 {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -103,9 +116,8 @@ section.main_div-container div.dimensions_div-container div.h2-div-a-containers_
   justify-content: flex-end;
   position: relative;
   border-radius: 0.25rem;
-  border: solid 2px gray;
 }
-section.main_div-container div.dimensions_div-container div.h2-div-a-containers_grid div.divcards-container-grid div.mini-card-4 {
+section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard6 {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -113,30 +125,52 @@ section.main_div-container div.dimensions_div-container div.h2-div-a-containers_
   justify-content: flex-end;
   position: relative;
   border-radius: 0.25rem;
-  border: solid 2px gray;
 }
-section.main_div-container div.dimensions_div-container div.h2-div-a-containers_grid button.img-span-container {
-  display: flex;
-  justify-content: center;
+section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a a.link-container_div-img-span {
+  position: relative;
+  margin: 0px;
+  background-color: transparent;
+  display: inline-flex;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
   text-align: center;
-  border: none;
-  border-radius: 3px;
-  width: 14rem;
-  height: 2.5rem;
+  height: 3rem;
   cursor: pointer;
-  background-color: var(--color-button);
-  padding: 0 1.5rem 0 1.5rem; /* arriba | derecha | abajo | izquierda */
+  font-weight: 700;
+  font-size: var(--font-size-ml);
+  white-space: nowrap;
+  border: unset;
+  padding: 0px 1.5rem;
+  width: auto;
+  color: rgb(255, 255, 255);
 }
-section.main_div-container div.dimensions_div-container div.h2-div-a-containers_grid button.img-span-container:hover {
-  animation: vibrating 1.1s;
+section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a a.link-container_div-img-span div.button_color {
+  position: absolute;
+  box-sizing: content-box;
+  display: block;
+  content: "";
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(230, 0, 18);
+  background-color: rgb(230, 0, 18);
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  top: 0px;
+  left: 0px;
+  padding: 0px;
+  border-radius: 0.25rem;
+  transform: none;
+}
+section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a a.link-container_div-img-span div.button_color:hover {
+  animation: spring 1s;
   background-color: var(--hover-color-button);
-  box-shadow: 0px 0px 0px 1px var(--hover-color-button);
 }
-@keyframes vibrating {
+@keyframes spring {
   10% {
     background-color: var(--hover-color-button);
-    box-shadow: 0px 0px 0px 2px var(--hover-color-button);
+    transform: scale(1);
   }
   25% {
     background-color: var(--hover-color-button);
@@ -144,21 +178,37 @@ section.main_div-container div.dimensions_div-container div.h2-div-a-containers_
   }
   35% {
     background-color: var(--hover-color-button);
-    box-shadow: 1px 0px 0px 1.5px var(--hover-color-button);
+    transform: scale(0.9);
+  }
+  45% {
+    background-color: var(--hover-color-button);
+    box-shadow: none;
+  }
+  55% {
+    background-color: var(--hover-color-button);
+    transform: scale(1);
+  }
+  65% {
+    background-color: var(--hover-color-button);
+    box-shadow: none;
   }
   100% {
     background-color: var(--hover-color-button);
+    transform: scale(0.9);
   }
 }
-section.main_div-container div.dimensions_div-container div.h2-div-a-containers_grid button.img-span-container:active {
-  transform: scale(0.95);
+section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a a.link-container_div-img-span div.button_color:active {
+  transform: scale(1);
 }
-section.main_div-container div.dimensions_div-container div.h2-div-a-containers_grid button.img-span-container img.svg-icon {
+section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a a.link-container_div-img-span img.svg_info-icon {
   display: flex;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: auto;
+  height: 1.25rem;
+  z-index: 1;
+  margin-left: 0px;
+  margin-right: 1rem;
 }
-section.main_div-container div.dimensions_div-container div.h2-div-a-containers_grid button.img-span-container span.letters {
+section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a a.link-container_div-img-span span.letters_enter-to-other-article {
   display: flex;
   font-size: 14px;
   font-weight: bold;
