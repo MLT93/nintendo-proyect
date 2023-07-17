@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -53,6 +54,7 @@ a {
   text-decoration: none;
 }
 
+/* Sección relacionada a las cards grandes y pequeñas */
 section.main-container_div {
   position: relative;
   padding-top: 3rem;
