@@ -4,19 +4,19 @@
           $duration: 1.1s;
           @keyframes vibrating {
             10% {
-              background-color: $hover-color-button;
-              box-shadow: 0px 0px 0px 2px $hover-color-button;
+              background-color: var(--hover-color-button);
+              box-shadow: 0px 0px 0px 2px var(--hover-color-button);
             }
             25% {
-              background-color: $hover-color-button;
+              background-color: var(--hover-color-button);
               box-shadow: none;
             }
             35% {
-              background-color: $hover-color-button;
-              box-shadow: 1px 0px 0px 1.5px $hover-color-button;
+              background-color: var(--hover-color-button);
+              box-shadow: 1px 0px 0px 1.5px var(--hover-color-button);
             }
             100% {
-              background-color: $hover-color-button;
+              background-color: var(--hover-color-button);
             }
           }
           animation: vibrating $duration;
@@ -26,36 +26,36 @@
           $duration: 0.8s;
           @keyframes spring {
             10% {
-              background-color: $hover-color-button;
+              background-color: var(--hover-color-button);
               transform: scale(1.01);
-              border-color: $hover-color-button;
+              border-color: var(--hover-color-button);
             }
             25% {
-              background-color: $hover-color-button;
+              background-color: var(--hover-color-button);
               transform: scale(1.04);
-              border-color: $hover-color-button;
+              border-color: var(--hover-color-button);
             }
             35% {
-              background-color: $hover-color-button;
+              background-color: var(--hover-color-button);
               transform: scale(1.01);
-              border-color: $hover-color-button;
+              border-color: var(--hover-color-button);
             }
             45% {
-              background-color: $hover-color-button;
-              border-color: $hover-color-button;
+              background-color: var(--hover-color-button);
+              border-color: var(--hover-color-button);
             }
             55% {
-              background-color: $hover-color-button;
+              background-color: var(--hover-color-button);
               transform: scale(1.04);
-              border-color: $hover-color-button;
+              border-color: var(--hover-color-button);
             }
             65% {
-              background-color: $hover-color-button;
-              border-color: $hover-color-button;
+              background-color: var(--hover-color-button);
+              border-color: var(--hover-color-button);
             }
             100% {
-              background-color: $hover-color-button;
-              border-color: $hover-color-button;
+              background-color: var(--hover-color-button);
+              border-color: var(--hover-color-button);
             }
           }
           animation: spring $duration;

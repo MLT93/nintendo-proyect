@@ -4,16 +4,16 @@
 *::before {
   box-sizing: border-box;
 }
-:root {
+  /* variables */
+:root{
+  /* color types: */
   --color-button: rgb(230, 0, 18);
-  --hover-color-button: rgb(180, 0, 18);
+  --hover-color-button: rgb(172, 0, 13);
   --font-color-main: rgb(72, 72, 72);
   --color-white: rgb(255, 255, 255);
   --carrousel-arrow-background-color: rgba(72, 72, 72, 0.234);
   --carrousel-arrow-hover-color: rgba(72, 72, 72, 0.543);
-
-  /* font sizing */
-
+  /* font sizing: */
   --font-size-xs: 0.75rem;
   --font-size-s: 0.875rem;
   --font-size-m: 1rem;
@@ -23,31 +23,17 @@
 }
 html,
 body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 16px;
-  line-height: 1.4;
-  background: var(--background-color-html-body);
-}
-
-
-
-/* variables */
-html,
-body {
   height: 100vh;
   width: auto;
   padding: 0px;
   margin: 0px;
+  /* color: --font-color-main; */
   font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "sans-serif";
   font-size: 16px;
   line-height: 1.4;
+  /* background: --font-color-main; */
   -webkit-font-smoothing: antialiased;
 }
-
 h1,
 h2,
 h3,
@@ -62,85 +48,7 @@ h6 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-
-a {
-  text-decoration: none;
-}
-
-/* Sección relacionada a las cards grandes y pequeñas */
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-/* variables */
-html,
-body {
-  height: 100vh;
-  width: auto;
-  padding: 0px;
-  margin: 0px;
-  font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "sans-serif";
-  font-size: 16px;
-  line-height: 1.4;
-  -webkit-font-smoothing: antialiased;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  display: block;
-  font-weight: 700;
-  letter-spacing: 0px;
-  margin: 0px 0px 1em;
-  padding: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-a {
-  text-decoration: none;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-/* variables */
-html,
-body {
-  height: 100vh;
-  width: auto;
-  padding: 0px;
-  margin: 0px;
-  font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "sans-serif";
-  font-size: 16px;
-  line-height: 1.4;
-  -webkit-font-smoothing: antialiased;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  display: block;
-  font-weight: 700;
-  letter-spacing: 0px;
-  margin: 0px 0px 1em;
-  padding: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-a {
+a{
   text-decoration: none;
 }
 
@@ -163,11 +71,11 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   gap: 2rem;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a h2.letters_news-content {
-  color: rgb(72, 72, 72);
+  color: var(--font-color-main);
   font-weight: 700;
   margin-block: 0;
   line-height: 1.35;
-  font-size: 1.75rem;
+  font-size: var(--font-size-xl);
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div {
   display: grid;
@@ -185,7 +93,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   -webkit-box-pack: end;
   justify-content: flex-end;
   position: relative;
-  background-color: rgb(72, 72, 72);
+  background-color: var(--font-color-main);
   border-radius: 0.25rem;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.grid-item_bigcard1 div.flex-container_a-div a.flex-item_2div {
@@ -193,7 +101,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   height: 100%;
   display: flex;
   flex-direction: column;
-  color: rgb(72, 72, 72);
+  color: var(--font-color-main);
   position: relative;
   margin-top: 0px;
   border-radius: 0.25rem;
@@ -217,7 +125,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   position: relative;
   -webkit-box-flex: 1;
   flex-grow: 1;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-white);
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.grid-item_bigcard1 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div {
   height: 100%;
@@ -227,7 +135,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   justify-content: space-between;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.grid-item_bigcard1 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div p.period-date {
-  font-size: 0.875rem;
+  font-size: var(--font-size-s);
   font-weight: 300;
   margin: 0rem 0rem 0.5rem 0rem;
 }
@@ -240,7 +148,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   height: 4rem;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.grid-item_bigcard1 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div div.container_h3 h3.letters_info-content {
-  font-size: 1rem;
+  font-size: var(--font-size-m);
   font-weight: 700;
   margin: 0;
   -webkit-line-clamp: 2;
@@ -264,7 +172,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.grid-item_bigcard1 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div div.grid-container_span span.read-more {
   text-align: left;
-  color: rgb(230, 0, 18);
+  color: var(--color-button);
   padding: 0px;
   width: fit-content;
   font-size: 0.875rem;
@@ -274,7 +182,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   position: relative;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: rgb(230, 0, 18);
+  border-bottom-color: var(--color-button);
   margin: 0;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.grid-item_bigcard1 div.flex-container_a-div div.flex-container_empty {
@@ -302,7 +210,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   -webkit-box-pack: end;
   justify-content: flex-end;
   position: relative;
-  background-color: rgb(72, 72, 72);
+  background-color: var(--font-color-main);
   border-radius: 0.25rem;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.grid-item_bigcard2 div.flex-container_a-div a.flex-item_2div {
@@ -310,7 +218,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   height: 100%;
   display: flex;
   flex-direction: column;
-  color: rgb(72, 72, 72);
+  color: var(--font-color-main);
   position: relative;
   margin-top: 0px;
   border-radius: 0.25rem;
@@ -334,7 +242,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   position: relative;
   -webkit-box-flex: 1;
   flex-grow: 1;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-white);
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.grid-item_bigcard2 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div {
   height: 100%;
@@ -344,7 +252,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   justify-content: space-between;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.grid-item_bigcard2 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div p.period-date {
-  font-size: 0.875rem;
+  font-size: var(--font-size-s);
   font-weight: 300;
   margin: 0rem 0rem 0.5rem 0rem;
 }
@@ -357,7 +265,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   height: 4rem;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.grid-item_bigcard2 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div div.container_h3 h3.letters_info-content {
-  font-size: 1rem;
+  font-size: var(--font-size-m);
   font-weight: 700;
   margin: 0;
   -webkit-line-clamp: 2;
@@ -381,7 +289,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.grid-item_bigcard2 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div div.grid-container_span span.read-more {
   text-align: left;
-  color: rgb(230, 0, 18);
+  color: var(--color-button);
   padding: 0px;
   width: fit-content;
   font-size: 0.875rem;
@@ -391,7 +299,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   position: relative;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: rgb(230, 0, 18);
+  border-bottom-color: var(--color-button);
   margin: 0;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.grid-item_bigcard2 div.flex-container_a-div div.flex-container_empty {
@@ -424,7 +332,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   -webkit-box-pack: end;
   justify-content: flex-end;
   position: relative;
-  background-color: rgb(72, 72, 72);
+  background-color: var(--font-color-main);
   border-radius: 0.25rem;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard3 div.flex-container_a-div a.flex-item_2div {
@@ -432,7 +340,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   height: 100%;
   display: flex;
   flex-direction: column;
-  color: rgb(72, 72, 72);
+  color: var(--font-color-main);
   position: relative;
   margin-top: 0px;
   border-radius: 0.25rem;
@@ -456,7 +364,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   position: relative;
   -webkit-box-flex: 1;
   flex-grow: 1;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-white);
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard3 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div {
   height: 100%;
@@ -466,7 +374,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   justify-content: space-between;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard3 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div p.period-date {
-  font-size: 0.875rem;
+  font-size: var(--font-size-s);
   font-weight: 300;
   margin: 0rem 0rem 0.5rem 0rem;
 }
@@ -479,7 +387,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   height: 4rem;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard3 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div div.container_h3 h3.letters_info-content {
-  font-size: 1rem;
+  font-size: var(--font-size-m);
   font-weight: 700;
   margin: 0;
   -webkit-line-clamp: 2;
@@ -503,7 +411,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard3 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div div.grid-container_span span.read-more {
   text-align: left;
-  color: rgb(230, 0, 18);
+  color: var(--color-button);
   padding: 0px;
   width: fit-content;
   font-size: 0.875rem;
@@ -513,7 +421,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   position: relative;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: rgb(230, 0, 18);
+  border-bottom-color: var(--color-button);
   margin: 0;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard3 div.flex-container_a-div div.flex-container_empty {
@@ -546,7 +454,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   -webkit-box-pack: end;
   justify-content: flex-end;
   position: relative;
-  background-color: rgb(72, 72, 72);
+  background-color: var(--font-color-main);
   border-radius: 0.25rem;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard4 div.flex-container_a-div a.flex-item_2div {
@@ -554,7 +462,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   height: 100%;
   display: flex;
   flex-direction: column;
-  color: rgb(72, 72, 72);
+  color: var(--font-color-main);
   position: relative;
   margin-top: 0px;
   border-radius: 0.25rem;
@@ -578,7 +486,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   position: relative;
   -webkit-box-flex: 1;
   flex-grow: 1;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-white);
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard4 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div {
   height: 100%;
@@ -588,7 +496,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   justify-content: space-between;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard4 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div p.period-date {
-  font-size: 0.875rem;
+  font-size: var(--font-size-s);
   font-weight: 300;
   margin: 0rem 0rem 0.5rem 0rem;
 }
@@ -601,7 +509,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   height: 4rem;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard4 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div div.container_h3 h3.letters_info-content {
-  font-size: 1rem;
+  font-size: var(--font-size-m);
   font-weight: 700;
   margin: 0;
   -webkit-line-clamp: 2;
@@ -625,7 +533,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard4 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div div.grid-container_span span.read-more {
   text-align: left;
-  color: rgb(230, 0, 18);
+  color: var(--color-button);
   padding: 0px;
   width: fit-content;
   font-size: 0.875rem;
@@ -635,7 +543,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   position: relative;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: rgb(230, 0, 18);
+  border-bottom-color: var(--color-button);
   margin: 0;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard4 div.flex-container_a-div div.flex-container_empty {
@@ -668,7 +576,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   -webkit-box-pack: end;
   justify-content: flex-end;
   position: relative;
-  background-color: rgb(72, 72, 72);
+  background-color: var(--font-color-main);
   border-radius: 0.25rem;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard5 div.flex-container_a-div a.flex-item_2div {
@@ -676,7 +584,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   height: 100%;
   display: flex;
   flex-direction: column;
-  color: rgb(72, 72, 72);
+  color: var(--font-color-main);
   position: relative;
   margin-top: 0px;
   border-radius: 0.25rem;
@@ -700,7 +608,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   position: relative;
   -webkit-box-flex: 1;
   flex-grow: 1;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-white);
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard5 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div {
   height: 100%;
@@ -710,7 +618,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   justify-content: space-between;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard5 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div p.period-date {
-  font-size: 0.875rem;
+  font-size: var(--font-size-s);
   font-weight: 300;
   margin: 0rem 0rem 0.5rem 0rem;
 }
@@ -723,7 +631,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   height: 4rem;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard5 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div div.container_h3 h3.letters_info-content {
-  font-size: 1rem;
+  font-size: var(--font-size-m);
   font-weight: 700;
   margin: 0;
   -webkit-line-clamp: 2;
@@ -747,7 +655,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard5 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div div.grid-container_span span.read-more {
   text-align: left;
-  color: rgb(230, 0, 18);
+  color: var(--color-button);
   padding: 0px;
   width: fit-content;
   font-size: 0.875rem;
@@ -757,7 +665,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   position: relative;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: rgb(230, 0, 18);
+  border-bottom-color: var(--color-button);
   margin: 0;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard5 div.flex-container_a-div div.flex-container_empty {
@@ -790,7 +698,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   -webkit-box-pack: end;
   justify-content: flex-end;
   position: relative;
-  background-color: rgb(72, 72, 72);
+  background-color: var(--font-color-main);
   border-radius: 0.25rem;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard6 div.flex-container_a-div a.flex-item_2div {
@@ -798,7 +706,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   height: 100%;
   display: flex;
   flex-direction: column;
-  color: rgb(72, 72, 72);
+  color: var(--font-color-main);
   position: relative;
   margin-top: 0px;
   border-radius: 0.25rem;
@@ -822,7 +730,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   position: relative;
   -webkit-box-flex: 1;
   flex-grow: 1;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-white);
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard6 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div {
   height: 100%;
@@ -832,7 +740,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   justify-content: space-between;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard6 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div p.period-date {
-  font-size: 0.875rem;
+  font-size: var(--font-size-s);
   font-weight: 300;
   margin: 0rem 0rem 0.5rem 0rem;
 }
@@ -845,7 +753,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   height: 4rem;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard6 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div div.container_h3 h3.letters_info-content {
-  font-size: 1rem;
+  font-size: var(--font-size-m);
   font-weight: 700;
   margin: 0;
   -webkit-line-clamp: 2;
@@ -869,7 +777,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard6 div.flex-container_a-div a.flex-item_2div div.container_div div.flex-container_p-div-p-div div.grid-container_span span.read-more {
   text-align: left;
-  color: rgb(230, 0, 18);
+  color: var(--color-button);
   padding: 0px;
   width: fit-content;
   font-size: 0.875rem;
@@ -879,7 +787,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   position: relative;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: rgb(230, 0, 18);
+  border-bottom-color: var(--color-button);
   margin: 0;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a div.grid-items-container_6div div.flex-item_minicard6 div.flex-container_a-div div.flex-container_empty {
@@ -909,12 +817,12 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   height: 3rem;
   cursor: pointer;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: var(--font-size-m);
   white-space: nowrap;
   border: unset;
   padding: 0px 2.5rem;
   width: auto;
-  color: rgb(255, 255, 255);
+  color: var(--color-white);
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a a.flex-container_div-img-span div.button_color {
   position: absolute;
@@ -923,8 +831,8 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   content: "";
   border-width: 1px;
   border-style: solid;
-  border-color: rgb(230, 0, 18);
-  background-color: rgb(230, 0, 18);
+  border-color: var(--color-button);
+  background-color: var(--color-button);
   height: calc(100% - 2px);
   width: calc(100% - 2px);
   top: 0px;
@@ -935,41 +843,41 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a a.flex-container_div-img-span div.button_color:hover {
   animation: spring 0.8s;
-  background-color: rgb(172, 0, 13);
-  border-color: rgb(172, 0, 13);
+  background-color: var(--hover-color-button);
+  border-color: var(--hover-color-button);
 }
 @keyframes spring {
   10% {
-    background-color: rgb(172, 0, 13);
+    background-color: var(--hover-color-button);
     transform: scale(1.01);
-    border-color: rgb(172, 0, 13);
+    border-color: var(--hover-color-button);
   }
   25% {
-    background-color: rgb(172, 0, 13);
+    background-color: var(--hover-color-button);
     transform: scale(1.04);
-    border-color: rgb(172, 0, 13);
+    border-color: var(--hover-color-button);
   }
   35% {
-    background-color: rgb(172, 0, 13);
+    background-color: var(--hover-color-button);
     transform: scale(1.01);
-    border-color: rgb(172, 0, 13);
+    border-color: var(--hover-color-button);
   }
   45% {
-    background-color: rgb(172, 0, 13);
-    border-color: rgb(172, 0, 13);
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
   }
   55% {
-    background-color: rgb(172, 0, 13);
+    background-color: var(--hover-color-button);
     transform: scale(1.04);
-    border-color: rgb(172, 0, 13);
+    border-color: var(--hover-color-button);
   }
   65% {
-    background-color: rgb(172, 0, 13);
-    border-color: rgb(172, 0, 13);
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
   }
   100% {
-    background-color: rgb(172, 0, 13);
-    border-color: rgb(172, 0, 13);
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
   }
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a a.flex-container_div-img-span div.button_color:active {
@@ -988,21 +896,21 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   font-size: 14px;
   font-weight: bold;
   z-index: 1;
-  color: rgb(255, 255, 255);
+  color: var(--color-white);
   pointer-events: none;
 }
 
 @media (hover: hover) {
   .flex-container_a-div:hover h3.letters_info-content {
-    color: rgb(230, 0, 18);
+    color: var(--color-button);
   }
   .flex-container_a-div:hover div.container-mkt-tour_img {
     opacity: 0.3;
     transition: 0.3s;
   }
   .flex-container_a-div:hover .hovered {
-    color: rgb(172, 0, 13) !important;
-    border-bottom-color: rgb(172, 0, 13) !important;
+    color: var(--hover-color-button) !important;
+    border-bottom-color: var(--hover-color-button) !important;
   }
 }
 
