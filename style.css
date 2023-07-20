@@ -31,3 +31,87 @@ body {
   line-height: 1.4;
   background: var(--background-color-html-body);
 }
+
+.nav{
+  position: sticky;
+  top:0;
+
+  display: flex;
+  flex-direction: column;
+
+  height: 6rem;
+  width: 100%;
+
+  background-color: white;
+}
+/*-----------Head---------*/
+.nav__header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  
+  height: 100%;
+
+  border-bottom: 1px solid rgb(167, 165, 165);
+}
+.nav__header__left,
+.nav__header__left__search__form,
+.nav__header__left__search__form-categories,
+.nav__header__right,
+.nav__bottom,
+.nav__bottom>button,
+.nav__bottom>a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.button-search>svg{
+  width: 1.12rem;
+}
+/*-----------Head-left---------*/
+.nav__header__left>a>img{
+  display: block;
+  height: 52px;
+  width: 105px;
+}
+.nav__header__left__search__form{
+  border-bottom: 1px solid black;
+}
+.nav__header__left__search__form>button,
+.nav__bottom>button{
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+/*
+.nav__header__left__search__form>button:hover{
+  color: rgb(230, 0, 18);
+}
+*/
+.nav__header__left__search__form>input{
+  width: 17rem;
+  border: none;
+}
+.nav__header__left__search__form>input:focus-visible{
+  outline: none;
+}
+/*-----------Head-right---------*/
+.nav__header__right{
+  padding-right:1rem;
+}
+.nav__header__right>a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+/*-----------Bottom---------*/
+.nav__bottom{
+  height: 100%;
+}
+/*.nav__bottom>button:hover{
+  color: red;
+}*/

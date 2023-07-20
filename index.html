@@ -1,17 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>"Insertar Titulo"</title>  <!-- FALTA POR AÑADIR -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Enlaces para la font "Montserrat"-->
-    <link rel="preconnect" href="https://fonts.googleapis.com/" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>"Insertar Titulo"</title>  <!-- FALTA POR AÑADIR -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Enlaces para la font "Montserrat"-->
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="nav"><!-- -->
+    <div class="nav__header"><!--.nav-header -->
+        <div class="nav__header__left"><!--header-left-->
+            <a><!--.logo-->
+                <img src="assets/nintendo.png"><!--.logo__image -->
+            </a>
+            <div class="nav__header__left__search"><!--.search-->
+                <form class="nav__header__left__search__form"><!--.form-->
+                    <button class="button-search"><!--.button-->
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><!--.button__image -->
+                            <path d="M31.564 28.745l-8.73-8.73a12.66 12.66 0 1 0-2.804 2.834l8.715 8.715a1.5 1.5 0 0 0 2.114 0l.705-.705a1.5 1.5 0 0 0 0-2.114zm-18.966-7.433A8.611 8.611 0 1 1 21.21 12.7a8.62 8.62 0 0 1-8.612 8.612z" fill="currentColor"></path>
+                        </svg>
+                        <!--<img class="search" src="assets/search.svg">-->
+                    </button>   
+                    <input type="search" placeholder="Search">
+                    <div class="nav__header__left__search__form-categories">
+                        <div>
+                            <p>All categories</p>
+                        </div>
+                        <div>
+                            <img src="assets/chevron-down.svg">
+                        </div>
+                    </div>
+                </form>
+            </div>   
+        </div>
+        <div class="nav__header__right"><!--header-right-->
+            <a>
+                <img src="assets/help-square-filled.svg">
+                <p>Support</p>
+            </a>
+            <a>
+                <img src="assets/heart-filled.svg">
+                <p>Wish List</p>
+            </a>
+            <a>
+                <img src="assets/shopping-cart.svg">
+                <p>Cart</p>
+            </a>
+            <a>
+                <img src="assets/user.svg">
+                <p>Log in / Sign up</p>
+            </a> 
+            <a>
+                <img src="assets/flag.webp">
+            </a>   
+        </div>
+    </div>
+    <div class="nav__bottom"> <!--.nav-bottom -->
+        <button>
+            <img src="assets/device-nintendo.svg">
+            <p>My Nintendo Store</p>
+            <img src="assets/chevron-down.svg">
+        </button>
+        <button>
+            <img src="assets/device-nintendo.svg">
+            <p>Games</p>
+            <img src="assets/chevron-down.svg">
+        </button>
+        <button>
+            <img src="assets/device-nintendo.svg">
+            <p>Nintendo Switch</p>
+            <img src="assets/chevron-down.svg">
+        </button>
+        <a>
+            <img src="assets/device-nintendo.svg">
+            <p>News and Events</p>
+        </a>
+        <button>
+            <img src="assets/device-nintendo.svg">
+            <p>Play Nintendo</p>
+            <img src="assets/chevron-down.svg">
+        </button>
+    </div>
+</div>
+</body>
 </html>
