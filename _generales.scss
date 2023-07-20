@@ -1,0 +1,53 @@
+@charset "UTF-8";
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+  /* variables */
+:root{
+  /* color types: */
+  --color-button: rgb(230, 0, 18);
+  --hover-color-button: rgb(172, 0, 13);
+  --font-color-main: rgb(72, 72, 72);
+  --color-white: rgb(255, 255, 255);
+  --carrousel-arrow-background-color: rgba(72, 72, 72, 0.234);
+  --carrousel-arrow-hover-color: rgba(72, 72, 72, 0.543);
+  /* font sizing: */
+  --font-size-xs: 0.75rem;
+  --font-size-s: 0.875rem;
+  --font-size-m: 1rem;
+  --font-size-ml: 1.125rem;
+  --font-size-l: 1.3125rem;
+  --font-size-xl: 1.75rem;
+}
+html,
+body {
+  height: 100vh;
+  width: auto;
+  padding: 0px;
+  margin: 0px;
+  /* color: --font-color-main; */
+  font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "sans-serif";
+  font-size: 16px;
+  line-height: 1.4;
+  /* background: --font-color-main; */
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  font-weight: 700;
+  letter-spacing: 0px;
+  margin: 0px 0px 1em;
+  padding: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+a{
+  text-decoration: none;
+}
