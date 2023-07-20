@@ -1,5 +1,4 @@
-        @import "generales";
-        // animación vibrato
+        // /* animación vibrato */
         @mixin vibrating-animation {
           $duration: 1.1s;
           @keyframes vibrating {
@@ -21,7 +20,7 @@
           }
           animation: vibrating $duration;
         }
-        // animación resorte
+        // /* animación resorte */
         @mixin spring-animation {
           $duration: 0.8s;
           @keyframes spring {
