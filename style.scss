@@ -75,21 +75,31 @@ a {
                             }
                         }
                     }
-                    .frm-2{
+                    >.frm-1:hover{
+                        >.frm-1_button{
+                            >svg{
+                                fill: $color-button;
+                            }
+                            >span{
+                                color:$color-button;
+                            }
+                        }
+                    }
+                    >.frm-2{
                         //span
                         //span
                         >.ctgrs{
                             @include dflex(none,center,center);
-                            padding-right: $font-size-xs;
+                            padding-right: $font-size-xs; 
                             >.ctgrs-slct{
                                 //div{}
                                 >.ctgrs-slct_select{
                                     appearance: none;
                                     border: none;
                                     outline: none;
+                                    cursor: pointer;
                                     @include fnt($font-size-s,bold);
                                 }
-                                //select:before{}
                             }
                             >.ctgrs-svg{
                                 @include dflex(none,center,space-between);
@@ -99,6 +109,29 @@ a {
                             }
                         }
                     }
+                    >.frm-2:hover{
+                        >.ctgrs{
+                            >.ctgrs-slct{
+                                    color:$color-button;
+                                >.ctgrs-slct_select{
+                                    option{
+                                        color: $font-color-main;    
+                                    }
+                                }
+                            }
+                            >.ctgrs-svg{
+                                svg{
+                                    fill: $color-button;
+                                    transform: rotate(-180deg);
+                                    transition:200ms ease-in-out 25ms;
+                                }
+                            }
+                        }
+                    }
+                }    
+                >.frm:hover{
+                    border-bottom: 1px solid $color-button;
+                    transition: border-bottom 200ms ease-in-out 25ms;
                 }
             }
         }
@@ -106,6 +139,7 @@ a {
             gap: $font-size-xl;
             padding:0 1.25rem;
             >.button-1{
+                cursor: pointer;
                 @include dflex(none,center,center);
                 >.button-1_svg{
                     @include dflex(none,center,center);
@@ -119,7 +153,21 @@ a {
                 }
                 //>.button-1_txt{}
             }
+            >.button-1:hover{
+                >.button-1_svg{
+                    >.svg1{
+                        fill: $color-button;
+                    }
+                    >.svg2{
+                        fill: $color-button; 
+                    }
+                }
+                >.button-1_txt{
+                    color: $color-button;
+                }
+            }
             >.button-2{
+                cursor: pointer;
                 @include dflex(none,center,center);
                 border: none;
                 background: none;
@@ -131,6 +179,16 @@ a {
                     }
                 }
                 //>.button-2_txt{}
+            }
+            >.button-2:hover{
+                >.button-2_svg{
+                    svg{
+                        fill: $color-button;   
+                    }
+                }
+                >.button-2_txt{
+                    color: $color-button;
+                }
             }
             >.button-3{
                 .button-3_img{
@@ -174,6 +232,21 @@ a {
                         }
                     }
                 }
+                >.button-a:hover{
+                    >.button-a_svg1{
+                        >svg{
+                            fill: $color-button;
+                        }
+                    }
+                    >.button-a_txt{
+                        color:$color-button;
+                    }
+                    >.button-a_svg2{
+                        >svg{
+                            fill: $color-button;
+                        }
+                    }
+                }
                 >.button-b{
                     gap: 0;
                     >.button-b_svg{
@@ -181,10 +254,20 @@ a {
                         @include dflex(none,center,center);
                         >svg{
                             @include svg($font-color-main,$font-size-ml);
+                        }
+                        >.button-b_txt{
+                            margin-right: 0.375rem;
+                        }
+                    }
+                }
+                >.button-b:hover{
+                    >.button-b_svg{
+                        svg{
+                            fill: $color-button;
+                        }
                     }
                     >.button-b_txt{
-                        margin-right: 0.375rem;
-                    }
+                        color:$color-button;
                     }
                 }
             }

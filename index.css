@@ -105,7 +105,13 @@ a {
   color: rgb(114, 114, 114);
   line-height: 1.5;
 }
-.nav > .nav-header > .header-left > .src > .frm .frm-2 > .ctgrs {
+.nav > .nav-header > .header-left > .src > .frm > .frm-1:hover > .frm-1_button > svg {
+  fill: rgb(230, 0, 18);
+}
+.nav > .nav-header > .header-left > .src > .frm > .frm-1:hover > .frm-1_button > span {
+  color: rgb(230, 0, 18);
+}
+.nav > .nav-header > .header-left > .src > .frm > .frm-2 > .ctgrs {
   display: flex;
   flex-direction: none;
   align-items: center;
@@ -113,31 +119,48 @@ a {
   gap: none;
   padding-right: 0.75rem;
 }
-.nav > .nav-header > .header-left > .src > .frm .frm-2 > .ctgrs > .ctgrs-slct > .ctgrs-slct_select {
+.nav > .nav-header > .header-left > .src > .frm > .frm-2 > .ctgrs > .ctgrs-slct > .ctgrs-slct_select {
   appearance: none;
   border: none;
   outline: none;
+  cursor: pointer;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   color: inherit;
 }
-.nav > .nav-header > .header-left > .src > .frm .frm-2 > .ctgrs > .ctgrs-svg {
+.nav > .nav-header > .header-left > .src > .frm > .frm-2 > .ctgrs > .ctgrs-svg {
   display: flex;
   flex-direction: none;
   align-items: center;
   justify-content: space-between;
   gap: none;
 }
-.nav > .nav-header > .header-left > .src > .frm .frm-2 > .ctgrs > .ctgrs-svg svg {
+.nav > .nav-header > .header-left > .src > .frm > .frm-2 > .ctgrs > .ctgrs-svg svg {
   fill: rgb(72, 72, 72);
   width: 0.875rem;
+}
+.nav > .nav-header > .header-left > .src > .frm > .frm-2:hover > .ctgrs > .ctgrs-slct {
+  color: rgb(230, 0, 18);
+}
+.nav > .nav-header > .header-left > .src > .frm > .frm-2:hover > .ctgrs > .ctgrs-slct > .ctgrs-slct_select option {
+  color: rgb(72, 72, 72);
+}
+.nav > .nav-header > .header-left > .src > .frm > .frm-2:hover > .ctgrs > .ctgrs-svg svg {
+  fill: rgb(230, 0, 18);
+  transform: rotate(-180deg);
+  transition: 200ms ease-in-out 25ms;
+}
+.nav > .nav-header > .header-left > .src > .frm:hover {
+  border-bottom: 1px solid rgb(230, 0, 18);
+  transition: border-bottom 200ms ease-in-out 25ms;
 }
 .nav > .nav-header .header-right {
   gap: 1.75rem;
   padding: 0 1.25rem;
 }
 .nav > .nav-header .header-right > .button-1 {
+  cursor: pointer;
   display: flex;
   flex-direction: none;
   align-items: center;
@@ -160,7 +183,17 @@ a {
   fill: rgb(72, 72, 72);
   width: 1.25rem;
 }
+.nav > .nav-header .header-right > .button-1:hover > .button-1_svg > .svg1 {
+  fill: rgb(230, 0, 18);
+}
+.nav > .nav-header .header-right > .button-1:hover > .button-1_svg > .svg2 {
+  fill: rgb(230, 0, 18);
+}
+.nav > .nav-header .header-right > .button-1:hover > .button-1_txt {
+  color: rgb(230, 0, 18);
+}
 .nav > .nav-header .header-right > .button-2 {
+  cursor: pointer;
   display: flex;
   flex-direction: none;
   align-items: center;
@@ -180,6 +213,12 @@ a {
 .nav > .nav-header .header-right > .button-2 > .button-2_svg svg {
   fill: rgb(72, 72, 72);
   width: 1.125rem;
+}
+.nav > .nav-header .header-right > .button-2:hover > .button-2_svg svg {
+  fill: rgb(230, 0, 18);
+}
+.nav > .nav-header .header-right > .button-2:hover > .button-2_txt {
+  color: rgb(230, 0, 18);
 }
 .nav > .nav-header .header-right > .button-3 .button-3_img picture {
   display: flex;
@@ -231,6 +270,15 @@ a {
   fill: rgb(72, 72, 72);
   width: 0.75rem;
 }
+.nav .nav-ftr .nav-ftr-1 .footer > .button-a:hover > .button-a_svg1 > svg {
+  fill: rgb(230, 0, 18);
+}
+.nav .nav-ftr .nav-ftr-1 .footer > .button-a:hover > .button-a_txt {
+  color: rgb(230, 0, 18);
+}
+.nav .nav-ftr .nav-ftr-1 .footer > .button-a:hover > .button-a_svg2 > svg {
+  fill: rgb(230, 0, 18);
+}
 .nav .nav-ftr .nav-ftr-1 .footer > .button-b {
   gap: 0;
 }
@@ -248,6 +296,12 @@ a {
 }
 .nav .nav-ftr .nav-ftr-1 .footer > .button-b > .button-b_svg > .button-b_txt {
   margin-right: 0.375rem;
+}
+.nav .nav-ftr .nav-ftr-1 .footer > .button-b:hover > .button-b_svg svg {
+  fill: rgb(230, 0, 18);
+}
+.nav .nav-ftr .nav-ftr-1 .footer > .button-b:hover > .button-b_txt {
+  color: rgb(230, 0, 18);
 }
 
 /*# sourceMappingURL=index.css.map */
