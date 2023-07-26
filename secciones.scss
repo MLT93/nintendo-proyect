@@ -1,0 +1,59 @@
+$gris: #484848;
+
+@mixin section ($width, $margin:0) {
+    margin-left: 10.5rem;
+    margin-right: 10.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 0px;
+
+    .imagen {
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    .titulo {
+        font-family: "Monserrat", sans-serif;
+        color: $gris;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .ending {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        p {
+            font-family: "Monserrat", sans-serif;
+            font-size: 20.5px;
+            color: $gris;
+            font-weight: 550;
+            width: $width;
+        }
+
+        button {
+            font-family: "Monserrat", sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: white;
+            border-radius: 5px;
+            background-color: red;
+            padding: 15px 10px 15px 10px;
+            width: 180px;
+            border-width: 0px;
+            height: 50px;
+            margin-left: $margin;
+        }
+    }
+}
+
+.online-store {
+    @include section(95%,10px)
+}
+
+.gaming-systems {
+    @include section(45%)
+}
