@@ -1,5 +1,7 @@
 @import "variables","mixin";
-
+@import "generales";
+@import "section-div-cards";
+@import "mixins";
 html,
 body {
     color: $font-color-main;
@@ -71,7 +73,7 @@ a {
                             >span{
                                 @include fnt(none,none,rgb(114, 114, 114));
                                 line-height: 1.5;
-                                //cursor: pointer; 
+                                
                             }
                         }
                     }
@@ -92,7 +94,6 @@ a {
                             @include dflex(none,center,center);
                             padding-right: $font-size-xs; 
                             >.ctgrs-slct{
-                                //div{}
                                 >.ctgrs-slct_select{
                                     appearance: none;
                                     border: none;
@@ -151,7 +152,7 @@ a {
                         @include svg($font-color-main,1.25rem);
                     }
                 }
-                //>.button-1_txt{}
+            
             }
             >.button-1:hover{
                 >.button-1_svg{
@@ -178,7 +179,7 @@ a {
                         @include svg($font-color-main,$font-size-ml);
                     }
                 }
-                //>.button-2_txt{}
+                
             }
             >.button-2:hover{
                 >.button-2_svg{
@@ -194,8 +195,7 @@ a {
                 .button-3_img{
                     picture{
                         @include dflex(none,center,center);
-                        //source{}
-                        //img{}
+                       
                     }
                 }
             }
