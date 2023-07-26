@@ -242,6 +242,7 @@ a {
   padding: 0.75rem;
   border: none;
   background-color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 .nav .nav-ftr .nav-ftr-1 .footer > .button-a > .button-a_svg1 {
   display: flex;
@@ -281,6 +282,7 @@ a {
 }
 .nav .nav-ftr .nav-ftr-1 .footer > .button-b {
   gap: 0;
+  cursor: pointer;
 }
 .nav .nav-ftr .nav-ftr-1 .footer > .button-b > .button-b_svg {
   margin-right: 0.375rem;
