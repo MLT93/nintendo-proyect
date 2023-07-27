@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .dsp-flx {
   display: flex;
   flex-direction: row;
@@ -22,7 +23,6 @@
   height: 100%;
   border-bottom: 1px solid rgb(167, 165, 165);
   /*******************************************************/
-  /*******************************************************/
 }
 .nav .nav-header .header-left .logo div svg {
   width: 4.31rem;
@@ -46,25 +46,25 @@
   height: 20%;
   background-color: var(--font-color-main);
 }
-.nav .nav-header .header-right {
+.nav .nav-header ™ .header-right {
   padding-right: 1rem;
 }
-.nav .nav-header .header-right > a {
+.nav .nav-header ™ .header-right > a {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }
-.nav .nav-header .header-right > a span svg {
+.nav .nav-header ™ .header-right > a span svg {
   width: 1.125rem;
 }
-.nav .nav-header .header-right > button {
+.nav .nav-header ™ .header-right > button {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }
-.nav .nav-header .header-right > button span svg {
+.nav .nav-header ™ .header-right > button span svg {
   width: 1.125rem;
 }
 .nav .nav-footer {
