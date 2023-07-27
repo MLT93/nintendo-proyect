@@ -1,33 +1,88 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
+.dsp-flx {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
-:root {
-  --color-button: rgb(230, 0, 18);
-  --hover-color-button: rgb(180, 0, 18);
-  --font-color-main: rgb(72, 72, 72);
-  --color-white: rgb(255, 255, 255);
-  --carrousel-arrow-background-color: rgba(72, 72, 72, 0.234);
-  --carrousel-arrow-hover-color: rgba(72, 72, 72, 0.543);
 
-  /* font sizing */
+.nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  height: 6rem;
+  background-color: white;
+}
+.nav .nav-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  border-bottom: 1px solid rgb(167, 165, 165);
+  /*******************************************************/
+  /*******************************************************/
+}
+.nav .nav-header .header-left .logo div svg {
+  width: 4.31rem;
+}
+.nav .nav-header .header-left .src .frm {
+  border-bottom: 1px solid black;
+}
+.nav .nav-header .header-left .src .frm span .frm-button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.nav .nav-header .header-left .src .frm span .frm-button svg {
+  width: 1.12rem;
+}
+.nav .nav-header .header-left .src .frm-ctgrs div div svg {
+  width: 0.875rem;
+}
+.nav .nav-header .button-dropdown-search {
+  width: 100%;
+  height: 20%;
+  background-color: var(--font-color-main);
+}
+.nav .nav-header .header-right {
+  padding-right: 1rem;
+}
+.nav .nav-header .header-right > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav .nav-header .header-right > a span svg {
+  width: 1.125rem;
+}
+.nav .nav-header .header-right > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav .nav-header .header-right > button span svg {
+  width: 1.125rem;
+}
+.nav .nav-footer {
+  height: 100%;
+}
+.nav .nav-footer div div > button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.nav .nav-footer div div > button span svg {
+  width: 1rem;
+}
+.nav .nav-footer div div > button span svg {
+  width: 0.75rem;
+}
+.nav .nav-footer div div > a span svg {
+  width: 1.125rem;
+}
 
-  --font-size-xs: 0.75rem;
-  --font-size-s: 0.875rem;
-  --font-size-m: 1rem;
-  --font-size-ml: 1.125rem;
-  --font-size-l: 1.3125rem;
-  --font-size-xl: 1.75rem;
-}
-html,
-body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 16px;
-  line-height: 1.4;
-  background: var(--background-color-html-body);
-}
+/*# sourceMappingURL=style.css.map */
