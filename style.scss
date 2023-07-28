@@ -1,17 +1,8 @@
 @import "generales";
+@import "mixins";
 @import "section-div-cards";
 @import "section-nav-search-dropdown-button";
 @import "variables","mixin";
-@import "mixins";
-html,
-body {
-    color: $font-color-main;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
 
 .dsp-flx{
     @include dflex(row,center,center,$font-size-m);
