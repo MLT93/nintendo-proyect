@@ -1,8 +1,9 @@
 @import "generales";
-@import "mixins";
-@import "section-div-cards";
-@import "section-nav-search-dropdown-button";
 @import "variables","mixin";
+@import "buttons";
+@import "cards";
+@import "section-nav-search-dropdown-button";
+@import "section-div-cards";
 
 .dsp-flx{
     @include dflex(row,center,center,$font-size-m);
