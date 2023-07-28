@@ -1,9 +1,8 @@
 .online-store {
-  margin-left: 10.5rem;
-  margin-right: 10.5rem;
   display: flex;
   flex-direction: column;
-  padding: 48px 0px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .online-store .imagen img {
   width: 100%;
@@ -43,11 +42,10 @@
 }
 
 .gaming-systems {
-  margin-left: 10.5rem;
-  margin-right: 10.5rem;
   display: flex;
   flex-direction: column;
-  padding: 48px 0px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .gaming-systems .imagen img {
   width: 100%;
