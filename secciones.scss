@@ -1,3 +1,8 @@
+@use '_mixins.scss';
+@use 'sass:color';
+@import '_mixins.scss';
+
+
 $gris: #484848;
 
 @mixin section ($width, $margin:0) {
@@ -46,6 +51,14 @@ $gris: #484848;
             border-width: 0px;
             height: 50px;
             margin-left: $margin;
+            &:hover{
+                @include spring-animation;
+            background-color: var(--hover-color-button);
+            border-color: var(--hover-color-button);
+            }
+            &:active {
+                transform: scale(1);
+              }
         }
     }
 }
