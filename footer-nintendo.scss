@@ -29,6 +29,9 @@ body {
         color: #484848;
         font-size: 18px;
         font-weight: 700;
+        &:hover{
+          text-decoration: underline var(--hover-color-button);
+        }
       }
     }
     ul {
@@ -41,6 +44,10 @@ body {
         text-decoration: none;
         color: #e60012;
         font-weight: bold;
+        &:hover{
+          text-decoration: underline;
+          color: var(--hover-color-button)
+        }
       }
     }
   }
