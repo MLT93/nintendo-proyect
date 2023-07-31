@@ -723,13 +723,6 @@ button.kxYHqG {
   -webkit-tap-highlight-color: transparent;
 }
 
-.button-dropdown-search {
-  width: 100%;
-  height: 20%;
-  background-color: var(--font-color-main);
-  color: var(--color-white);
-}
-
 @media (hover: hover) {
   .flex-direction-container_2div:hover h2.jPQOrx {
     color: var(--color-button);
@@ -739,6 +732,43 @@ button.kxYHqG {
     transition: all 0.5s;
   }
 }
+div.hTynpQ {
+  display: none;
+}
+
+button.button-dropdown-search {
+  display: none;
+}
+
+#menu-abrir.open:active {
+  display: block !important;
+  z-index: 50000;
+}
+
+div.hTynpQ.visible {
+  display: block;
+}
+
+div.header-right.no-visible {
+  display: none;
+}
+
+#menu-cerrar.visible {
+  display: block;
+}
+
+#menu-cerrar.close {
+  display: none;
+}
+
+div.hTynpQ.no-visible {
+  display: none;
+}
+
+div.header-right.visible {
+  display: flex;
+}
+
 /*******************************************************/
 section.main-container_div {
   position: relative;
