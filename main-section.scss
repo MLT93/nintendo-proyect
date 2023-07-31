@@ -1,124 +1,100 @@
-@use 'sass:color';
+@use "_mixins.scss";
+@use "sass:color";
 @import "_mixins.scss";
 
 body {
-    margin: 0;
-
+  margin: 0;
 }
 
 // Parte imagen
 
 .main-section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 
-    .imagen {
-        align-items: center;
-        justify-content: center;
-        margin: 0;
+  .imagen {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 
-        .imagen-flores {
-
-            width: 100%;
-            height: 490px;
-            margin: 0;
-
-        }
-
-        .imagen-pimkin {
-            margin-top: -460px;
-            width: 1450px;
-            height: 520px;
-            margin-left: 43px;
-            border-radius: 0.25rem;
-
-
-        }
-
-
+    .imagen-flores {
+      width: 100%;
+      height: 490px;
+      margin: 0;
     }
 
+    .imagen-pimkin {
+      margin-top: -460px;
+      width: 1450px;
+      height: 520px;
+      margin-left: 43px;
+      border-radius: 0.25rem;
+    }
+  }
 }
 
 // Parte de abajo
 
 .parte-abajo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 35px;
-
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 35px;
 }
 
 .abajo-izquierda {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 10px;
 
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-left: 10px;
+  h2 {
+    font-size: 28px;
+    color: rgb(72, 72, 72);
+    font-family: "Monserrat", sans-serif;
+  }
 
+  .button-available {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    background-color: red;
+    padding: 15px 10px 15px 10px;
+    width: 180px;
+    border-width: 0px;
+    height: 50px;
+    font-family: "Monserrat", sans-serif;
 
-    h2 {
-
-        font-size: 28px;
-        color: rgb(72, 72, 72);
-        font-family: "Monserrat", sans-serif;
+    &:hover {
+      @include spring-animation;
+      background-color: var(--hover-color-button);
+      border-color: var(--hover-color-button);
     }
-
-    .button-available {
-
-        font-size: 18px;
-        font-weight: 700;
-        color: white;
-        border-radius: 5px;
-        background-color: red;
-        padding: 15px 10px 15px 10px;
-        width: 180px;
-        border-width: 0px;
-        height: 50px;
-        font-family: "Monserrat", sans-serif;
-
-
-        &:hover {
-            
-            background-color: rgb(172, 0, 13);
-            border-color: rgb(172, 0, 13);
-        }
-
-        &:active {
-            transform: scale(1);
-        }
-
-
-
-
+    &:active {
+      transform: scale(1);
     }
-
+  }
 }
 
 .abajo-derecha {
-    display: flex;
-    gap: 13px;
-    margin-right: 9px;
+  display: flex;
+  gap: 13px;
+  margin-right: 9px;
 
-    .ESRB {
+  .ESRB {
+    height: 70px;
+    margin-left: 0px;
+  }
 
-        height: 70px;
-        margin-left: 0px;
-    }
-
-    .frase {
-
-        margin-top: 25px;
-        font-size: 12px;
-        line-height: 1rem;
-        color: rgb(125, 125, 125);
-        padding: 3px 0px 0px;
-        font-family: "Monserrat", sans-serif;
-    }
-
-
+  .frase {
+    margin-top: 25px;
+    font-size: 12px;
+    line-height: 1rem;
+    color: rgb(125, 125, 125);
+    padding: 3px 0px 0px;
+    font-family: "Monserrat", sans-serif;
+  }
 }
