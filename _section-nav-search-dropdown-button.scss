@@ -288,18 +288,27 @@ button.kxYHqG {
     transition: all 0.5s;
   }
 }
+.button-dropdown-search {
+  opacity: 1;
+  border: none;
+  color: var(--font-color-main);
+  background: transparent;
+  padding: 0px;
+  cursor: pointer;
+  transition: opacity 200ms ease-in-out 25ms;
+}
 div.hTynpQ {
   display: none;
 }
-button.button-dropdown-search{
+button.button-dropdown-search {
   display: none;
 }
-#menu-abrir.open:active {
-  display: block !important;
-  z-index: 50000;
+#menu-abrir.open {
+  display: block;
 }
 div.hTynpQ.visible {
   display: block;
+  transition: all 1.7s;
 }
 div.header-right.no-visible {
   display: none;
