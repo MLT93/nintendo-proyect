@@ -1,0 +1,277 @@
+@import "variables","mixin";
+@import "generales";
+@import "section-div-cards";
+@import "mixins";
+html,
+body {
+    color: $font-color-main;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dsp-flx{
+    @include dflex(row,center,center,$font-size-m);
+}
+.fnt{
+    @include fnt($font-size-s,700,$font-color-main);
+}
+
+.nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;    
+    z-index: 1000;
+    >.nav-header{
+        @include dflex(none,center,space-between);         
+        height: 3.25rem;   
+        border-bottom: 1px solid rgb(218, 218, 218);
+        background-color: $color-white;
+        >.header-left{
+            >.logo{
+                display: inline-flex;
+                align-items: center;
+                background-color: transparent;
+                >.logo-1{
+                    @include dflex(none,center,center);
+                    width: 6.5625rem;
+                    height: 3.25rem;
+                    background-color: $color-button;
+                    >.logo-1_svg{
+                        @include svg($color-white,4.31rem);
+                    }
+                }
+            }
+            >.src{
+                width:28.125rem;           
+                >.frm{
+                    @include dflex(none,center,space-between);                    
+                    height: 2.125rem;
+                    width: 100%;
+                    font-size: $font-size-s;
+                    border-bottom: 1px solid rgb(72, 72, 72);
+                    cursor: pointer;
+                    >.frm-1{
+                        display: flex;                        
+                        >.frm-1_button{
+                            @include dflex(none,center,center);                           
+                            height: 100%;
+                            width: 100%;
+                            padding: 0px;
+                            background: none;
+                            border: none;
+                            color: rgb(114, 114, 114);
+                            cursor: pointer;
+                            transition: color 200ms ease-in-out 25ms;
+                            >svg{
+                                margin-right: 0.625rem;
+                                @include svg($font-color-main,1.12rem);
+                            }
+                            >span{
+                                @include fnt(none,none,rgb(114, 114, 114));
+                                line-height: 1.5;
+                                
+                            }
+                        }
+                    }
+                    >.frm-1:hover{
+                        >.frm-1_button{
+                            >svg{
+                                fill: $color-button;
+                            }
+                            >span{
+                                color:$color-button;
+                            }
+                        }
+                    }
+                    >.frm-2{
+                        //span
+                        //span
+                        >.ctgrs{
+                            @include dflex(none,center,center);
+                            padding-right: $font-size-xs; 
+                            >.ctgrs-slct{
+                                >.ctgrs-slct_select{
+                                    appearance: none;
+                                    border: none;
+                                    outline: none;
+                                    cursor: pointer;
+                                    @include fnt($font-size-s,bold);
+                                }
+                            }
+                            >.ctgrs-svg{
+                                @include dflex(none,center,space-between);
+                                svg{
+                                    @include svg($font-color-main,$font-size-s);
+                                }
+                            }
+                        }
+                    }
+                    >.frm-2:hover{
+                        >.ctgrs{
+                            >.ctgrs-slct{
+                                    color:$color-button;
+                                >.ctgrs-slct_select{
+                                    option{
+                                        color: $font-color-main;    
+                                    }
+                                }
+                            }
+                            >.ctgrs-svg{
+                                svg{
+                                    fill: $color-button;
+                                    transform: rotate(-180deg);
+                                    transition:200ms ease-in-out 25ms;
+                                }
+                            }
+                        }
+                    }
+                }    
+                >.frm:hover{
+                    border-bottom: 1px solid $color-button;
+                    transition: border-bottom 200ms ease-in-out 25ms;
+                }
+            }
+        }
+        .header-right{
+            gap: $font-size-xl;
+            padding:0 1.25rem;
+            >.button-1{
+                cursor: pointer;
+                @include dflex(none,center,center);
+                >.button-1_svg{
+                    @include dflex(none,center,center);
+                    margin: 0px 0.375rem 0px 0px;
+                    >.svg1{
+                        @include svg($font-color-main,$font-size-ml);
+                    }
+                    >.svg2{
+                        @include svg($font-color-main,1.25rem);
+                    }
+                }
+            
+            }
+            >.button-1:hover{
+                >.button-1_svg{
+                    >.svg1{
+                        fill: $color-button;
+                    }
+                    >.svg2{
+                        fill: $color-button; 
+                    }
+                }
+                >.button-1_txt{
+                    color: $color-button;
+                }
+            }
+            >.button-2{
+                cursor: pointer;
+                @include dflex(none,center,center);
+                border: none;
+                background: none;
+                >.button-2_svg{
+                    margin: 0px 0.375rem 0px 0px;
+                    @include dflex(none,center,center);
+                    svg{
+                        @include svg($font-color-main,$font-size-ml);
+                    }
+                }
+                
+            }
+            >.button-2:hover{
+                >.button-2_svg{
+                    svg{
+                        fill: $color-button;   
+                    }
+                }
+                >.button-2_txt{
+                    color: $color-button;
+                }
+            }
+            >.button-3{
+                .button-3_img{
+                    picture{
+                        @include dflex(none,center,center);
+                       
+                    }
+                }
+            }
+        }
+    }
+    .nav-ftr{
+        .nav-ftr-1{
+            @include dflex(none,center,center);
+            height: 2.75rem;
+            border-bottom: 1px solid rgb(218, 218, 218);
+            background-color: $color-white;
+            .footer{
+                >.button-a{
+                    gap: 0;
+                    padding: 0.75rem;
+                    border: none;
+                    background-color: $color-white;
+                    cursor: pointer;
+                    >.button-a_svg1{
+                        @include dflex(none,center,center);
+                        margin-right: 0.375rem;
+                        >svg{
+                            @include svg($font-color-main,$font-size-m);
+                        }
+                    }
+                    >.button-a_txt{
+                        margin-right: 0.375rem;
+                    }
+                    >.button-a_svg2{
+                        margin-right: 0.375rem;
+                        @include dflex(none,center,center);
+                        >svg{
+                            @include svg($font-color-main,$font-size-xs);
+                        }
+                    }
+                }
+                >.button-a:hover{
+                    >.button-a_svg1{
+                        >svg{
+                            fill: $color-button;
+                        }
+                    }
+                    >.button-a_txt{
+                        color:$color-button;
+                    }
+                    >.button-a_svg2{
+                        >svg{
+                            fill: $color-button;
+                        }
+                    }
+                }
+                >.button-b{
+                    gap: 0;
+                    cursor: pointer;
+                    >.button-b_svg{
+                        margin-right: 0.375rem;
+                        @include dflex(none,center,center);
+                        >svg{
+                            @include svg($font-color-main,$font-size-ml);
+                        }
+                        >.button-b_txt{
+                            margin-right: 0.375rem;
+                        }
+                    }
+                }
+                >.button-b:hover{
+                    >.button-b_svg{
+                        svg{
+                            fill: $color-button;
+                        }
+                    }
+                    >.button-b_txt{
+                        color:$color-button;
+                    }
+                }
+            }
+        }
+    }
+}
