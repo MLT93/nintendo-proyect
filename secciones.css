@@ -1,8 +1,9 @@
 .online-store {
+  margin-left: 10.5rem;
+  margin-right: 10.5rem;
   display: flex;
   flex-direction: column;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 48px 0px;
 }
 .online-store .imagen img {
   width: 100%;
@@ -40,12 +41,55 @@
   height: 50px;
   margin-left: 10px;
 }
+.online-store .ending button:hover {
+  animation: spring 0.8s;
+  background-color: var(--hover-color-button);
+  border-color: var(--hover-color-button);
+}
+@keyframes spring {
+  10% {
+    background-color: var(--hover-color-button);
+    transform: scale(1.01);
+    border-color: var(--hover-color-button);
+  }
+  25% {
+    background-color: var(--hover-color-button);
+    transform: scale(1.04);
+    border-color: var(--hover-color-button);
+  }
+  35% {
+    background-color: var(--hover-color-button);
+    transform: scale(1.01);
+    border-color: var(--hover-color-button);
+  }
+  45% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+  55% {
+    background-color: var(--hover-color-button);
+    transform: scale(1.04);
+    border-color: var(--hover-color-button);
+  }
+  65% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+  100% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+}
+.online-store .ending button:active {
+  transform: scale(1);
+}
 
 .gaming-systems {
+  margin-left: 10.5rem;
+  margin-right: 10.5rem;
   display: flex;
   flex-direction: column;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 48px 0px;
 }
 .gaming-systems .imagen img {
   width: 100%;
@@ -82,6 +126,48 @@
   border-width: 0px;
   height: 50px;
   margin-left: 0;
+}
+.gaming-systems .ending button:hover {
+  animation: spring 0.8s;
+  background-color: var(--hover-color-button);
+  border-color: var(--hover-color-button);
+}
+@keyframes spring {
+  10% {
+    background-color: var(--hover-color-button);
+    transform: scale(1.01);
+    border-color: var(--hover-color-button);
+  }
+  25% {
+    background-color: var(--hover-color-button);
+    transform: scale(1.04);
+    border-color: var(--hover-color-button);
+  }
+  35% {
+    background-color: var(--hover-color-button);
+    transform: scale(1.01);
+    border-color: var(--hover-color-button);
+  }
+  45% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+  55% {
+    background-color: var(--hover-color-button);
+    transform: scale(1.04);
+    border-color: var(--hover-color-button);
+  }
+  65% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+  100% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+}
+.gaming-systems .ending button:active {
+  transform: scale(1);
 }
 
 /*# sourceMappingURL=secciones.css.map */
