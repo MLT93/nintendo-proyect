@@ -1,5 +1,6 @@
-@import 'generales';
-@import 'buttons';
+@use '_mixins.scss';
+@use 'sass:color';
+@import '_mixins.scss';
 
 
 $gris: #484848;
@@ -42,9 +43,9 @@ $gris: #484848;
             font-family: "Monserrat", sans-serif;
             font-size: 18px;
             font-weight: 700;
-            color: var(--color-white);
+            color: white;
             border-radius: 5px;
-            background-color: var(--color-button);
+            background-color: red;
             padding: 15px 10px 15px 10px;
             width: 180px;
             border-width: 0px;
@@ -57,7 +58,7 @@ $gris: #484848;
             }
             &:active {
                 transform: scale(1);
-            }
+              }
         }
     }
 }

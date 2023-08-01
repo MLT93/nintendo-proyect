@@ -12,6 +12,8 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
+  width: 30px;
+  height: auto;
 }
 .main-section .imagen .imagen-flores {
   width: 100%;

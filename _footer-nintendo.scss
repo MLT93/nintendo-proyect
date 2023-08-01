@@ -1,0 +1,127 @@
+
+.seccion--roja {
+  background-color: #e60012;
+  display: flex;
+  gap: 60px;
+  height: 125px;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 40px;
+}
+
+.nintendo {
+  flex-grow: 2;
+}
+
+.enlaces {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  font-family: "Monserrat", sans-serif;
+  row-gap: 1rem;
+  text-align: left;
+  h2 {
+    a {
+      text-decoration: none;
+      color: #484848;
+      font-size: 18px;
+      font-weight: 700;
+      &:hover{
+        text-decoration: underline var(--hover-color-button);
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 10px;
+    a {
+      text-decoration: none;
+      color: #e60012;
+      font-weight: bold;
+      &:hover{
+        text-decoration: underline;
+        color: var(--hover-color-button)
+      }
+    }
+  }
+}
+
+@mixin enlaces($px: 1px, $color: #dadada) {
+  border-left: $px solid $color;
+  padding-left: 24px;
+  font-size: var(--font-size-xs);
+}
+
+.about-nintendo {
+  @include enlaces(0px, transparent);
+  grid-row: span 2 / auto;
+  padding-left: 55px;
+}
+
+.shop,
+.my-nintendo-store,
+.support {
+  @include enlaces(1px);
+  grid-row: span 2;
+}
+
+.parents,
+.comunity,
+.privacity {
+  @include enlaces(1px);
+}
+
+.privacy-certified {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  img {
+    font-weight: 65px;
+    height: 4rem;
+    margin-right: 50px;
+  }
+}
+
+.seccion--negra {
+  background-color: #242424;
+    font-family: "Monserrat", sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 4rem;
+}
+.copyright {
+  color: #dbdbdb;
+  font-size: 10px;
+  margin: 0px;
+}
+
+.legal {
+  @extend .copyright;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30rem;
+  gap: 0.5rem;
+  a {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: #dbdbdb;
+    font-weight: 700;
+    flex-grow: 2;
+    img {
+      display: flex;
+      gap: 1rem;
+      border: 0.5px solid var(--color-white);
+      border-radius: 5px;
+      width: 20px;
+      margin-left: 6px;
+      margin-right: 5px;
+    }
+  }
+}
