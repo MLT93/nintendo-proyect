@@ -1,20 +1,20 @@
-
 .seccion--roja {
   background-color: #e60012;
   display: flex;
   gap: 60px;
   height: 125px;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
   margin-bottom: 40px;
 }
 
 .nintendo {
+  margin-left: 10.5rem;
   flex-grow: 2;
 }
 
 .enlaces {
+  margin: 0rem 10.5rem;
+  padding-left: 10px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   font-family: "Monserrat", sans-serif;
@@ -26,7 +26,7 @@
       color: #484848;
       font-size: 18px;
       font-weight: 700;
-      &:hover{
+      &:hover {
         text-decoration: underline var(--hover-color-button);
       }
     }
@@ -41,24 +41,30 @@
       text-decoration: none;
       color: #e60012;
       font-weight: bold;
-      &:hover{
+      &:hover {
         text-decoration: underline;
-        color: var(--hover-color-button)
+        color: var(--hover-color-button);
       }
     }
   }
 }
 
+.youtube {
+  margin-right: 10.5rem;
+}
+
 @mixin enlaces($px: 1px, $color: #dadada) {
   border-left: $px solid $color;
-  padding-left: 24px;
   font-size: var(--font-size-xs);
+  padding-left: 10px;
 }
 
 .about-nintendo {
-  @include enlaces(0px, transparent);
+  @include enlaces($px: 1px, $color: #dadada);
   grid-row: span 2 / auto;
-  padding-left: 55px;
+  padding-left: 10px;
+  font-size: var(--font-size-xs);
+
 }
 
 .shop,
@@ -75,6 +81,8 @@
 }
 
 .privacy-certified {
+  padding-right: 10.5rem;
+  padding-left: 10.5rem;
   display: flex;
   justify-content: flex-end;
   padding-bottom: 50px;
@@ -88,11 +96,11 @@
 
 .seccion--negra {
   background-color: #242424;
-    font-family: "Monserrat", sans-serif;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 4rem;
+  font-family: "Monserrat", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 4rem;
 }
 .copyright {
   color: #dbdbdb;
