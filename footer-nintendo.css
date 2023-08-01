@@ -30,6 +30,9 @@ body {
   font-size: 18px;
   font-weight: 700;
 }
+.enlaces h2 a:hover {
+  text-decoration: underline var(--hover-color-button);
+}
 .enlaces ul {
   list-style: none;
   padding: 0;
@@ -41,6 +44,10 @@ body {
   text-decoration: none;
   color: #e60012;
   font-weight: bold;
+}
+.enlaces li a:hover {
+  text-decoration: underline;
+  color: var(--hover-color-button);
 }
 
 .about-nintendo {
@@ -103,4 +110,6 @@ body {
   color: #dbdbdb;
   font-weight: 700;
   flex-grow: 2;
-}/*# sourceMappingURL=footer.css.map */
+}
+
+/*# sourceMappingURL=footer-nintendo.css.map */
