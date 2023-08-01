@@ -1,0 +1,63 @@
+.section-characters{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+    width: 100%;  
+    .container{
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+        @include dsp(flex,none,center,center);
+        .container-df{
+            @include dsp(flex,column);            
+            //.container-df__tittle{}
+            .container-df__main{
+                @include dsp(flex,row,none,none,1rem);
+                .card{
+                    .character{
+                        @include dsp(flex,column);                   
+                        position: relative;
+                        z-index: 1;
+                        width: 100%;
+                        height: auto;
+                        text-align: center;
+                        overflow: hidden;
+                        border-radius: 0.25rem;
+                        margin-bottom: 0.5rem;
+                        cursor: pointer;
+                        .background-image{
+                            @include pst(absolute);
+                            transform: scale(1.15);
+                            img{
+                                display: block;
+                                min-height: 1px;
+                                width: 100%;
+                            }
+                        }
+                        .front-image{
+                            @include pst(relative);
+                            img{
+                                display: block;
+                                min-height: 1px;
+                                width: 100%;
+                            }
+                        }                      
+                    }
+                    .character:hover{
+                        .background-image{
+                            transform: scale(1);
+                        }
+                        .front-image{
+                            transform: scale(1.15);
+                        }
+                    }               
+                    .name-character{
+                        font-size: 1.3125rem;
+                        font-weight: 700;
+                        margin-block: 0px;
+                    }
+                }               
+            }
+        }
+    }
+}

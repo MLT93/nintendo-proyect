@@ -1,0 +1,124 @@
+/* Animaciones del button: */
+/* 1. Animación vibrato */
+@mixin vibrating-animation {
+  $duration: 1.1s;
+  @keyframes vibrating {
+    10% {
+      background-color: var(--hover-color-button);
+      box-shadow: 0px 0px 0px 2px var(--hover-color-button);
+    }
+    25% {
+      background-color: var(--hover-color-button);
+      box-shadow: none;
+    }
+    35% {
+      background-color: var(--hover-color-button);
+      box-shadow: 1px 0px 0px 1.5px var(--hover-color-button);
+    }
+    100% {
+      background-color: var(--hover-color-button);
+    }
+  }
+  animation: vibrating $duration;
+}
+/* 2. Animación resorte */
+@mixin spring-animation {
+  $duration: 0.5s;
+  @keyframes spring {
+    0% {
+      background-color: var(--hover-color-button);
+      border-color: var(--hover-color-button);
+    }
+    7%{
+      background-color: var(--hover-color-button);
+      border-color: var(--hover-color-button);
+      transform: scale(1.09);
+    }
+    25% {
+      background-color: var(--hover-color-button);
+      border-color: var(--hover-color-button);
+    }
+    55% {
+      background-color: var(--hover-color-button);
+      border-color: var(--hover-color-button);
+      transform: scale(1);
+    }
+    75% {
+      background-color: var(--hover-color-button);
+      border-color: var(--hover-color-button);
+      transform: scale(1.03);
+    }
+    100% {
+      background-color: var(--hover-color-button);
+      border-color: var(--hover-color-button);
+    }
+  }
+  animation: spring $duration;
+}
+
+/* Propiedades del button: */
+%red-button {
+  /* @media queries font-size: 1rem; width: 100%; */
+  position: relative;
+  margin: 0px;
+  background-color: transparent;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+  height: 3rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: var(--font-size-m);
+  white-space: nowrap;
+  border: unset;
+  padding: 0px 1.5rem;
+  width: auto;
+  color: var(--color-white);
+  div.button_color {
+    position: absolute;
+    box-sizing: content-box;
+    display: block;
+    content: "";
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-button);
+    background-color: var(--color-button);
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    border-radius: 0.25rem;
+    transform: none;
+    transition: all 0.7s ease-in-out 0.025s;
+    &:hover {
+      transform: scale(1.05);
+      @include spring-animation;
+      background-color: var(--hover-color-button);
+      border-color: var(--hover-color-button);
+    }
+    &:active {
+      transform: scale(1);
+    }
+  }
+  img.svg_info-icon {
+    display: flex;
+    width: auto;
+    /* @media queries height: 1.125rem; */
+    height: 1.25rem;
+    z-index: 1;
+    margin-left: 0px;
+    margin-right: 1rem;
+  }
+  span.letters_enter-to-other-article {
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1;
+    color: var(--color-white);
+    pointer-events: none;
+  }
+}

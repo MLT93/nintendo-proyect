@@ -1,19 +1,18 @@
-@import "variables","mixin";
 @import "generales";
+@import "variables";
+@import "mixin";
+@import "buttons";
+@import "cards";
+@import "secciones";
+@import "section-nav-search-dropdown-button";
 @import "section-div-cards";
-@import "mixins";
-html,
-body {
-    color: $font-color-main;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
+@import "main-section";
+@import "mixin_characters";
+@import "style_characters";
+@import "footer-nintendo";
 
 .dsp-flx{
-    @include dflex(row,center,center,$font-size-m);
+    @include dflex(row, center, center, $font-size-m);
 }
 .fnt{
     @include fnt($font-size-s,700,$font-color-main);

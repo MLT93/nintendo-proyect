@@ -4,22 +4,25 @@
 *::before {
   box-sizing: border-box;
 }
-  /* variables */
-:root{
+/* variables */
+:root {
   /* color types: */
   --color-button: rgb(230, 0, 18);
   --hover-color-button: rgb(172, 0, 13);
   --font-color-main: rgb(72, 72, 72);
   --color-white: rgb(255, 255, 255);
+  --border-color-white: rgb(218, 218, 218);
   --carrousel-arrow-background-color: rgba(72, 72, 72, 0.234);
   --carrousel-arrow-hover-color: rgba(72, 72, 72, 0.543);
+
   /* font sizing: */
   --font-size-xs: 0.75rem;
-  --font-size-s: 0.975rem;
+  --font-size-s: 0.875rem;
   --font-size-m: 1rem;
   --font-size-ml: 1.125rem;
   --font-size-l: 1.3125rem;
   --font-size-xl: 1.75rem;
+
 }
 html,
 body {
@@ -48,6 +51,7 @@ h6 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-a{
+a {
   text-decoration: none;
+  color: inherit;
 }
