@@ -1,7 +1,7 @@
 /* Animaciones del button: */
 /* 1. Animación vibrato */
 @mixin vibrating-animation {
-  $duration: 1.1s;
+  $duration: 1.5s;
   @keyframes vibrating {
     10% {
       background-color: var(--hover-color-button);
@@ -32,7 +32,7 @@
     7%{
       background-color: var(--hover-color-button);
       border-color: var(--hover-color-button);
-      transform: scale(1.09);
+      transform: scale(1.07);
     }
     25% {
       background-color: var(--hover-color-button);
