@@ -23,62 +23,34 @@
 }
 /* 2. Animación resorte */
 @mixin spring-animation {
-  $duration: 1s;
+  $duration: 0.5s;
   @keyframes spring {
     0% {
       background-color: var(--hover-color-button);
       border-color: var(--hover-color-button);
-      transform: scale(1);
     }
-    10% {
-      background-color: var(--hover-color-button);
-      border-color: var(--hover-color-button);
-      transform: scale(1.01);
-    }
-    20% {
-      background-color: var(--hover-color-button);
-      border-color: var(--hover-color-button);
-      transform: scale(1.02);
-    }
-    30% {
-      background-color: var(--hover-color-button);
-      border-color: var(--hover-color-button);
-      transform: scale(1.03);
-    }
-    40% {
-      background-color: var(--hover-color-button);
-      border-color: var(--hover-color-button);
-      transform: scale(1.04);
-    }
-    50% {
-      background-color: var(--hover-color-button);
-      border-color: var(--hover-color-button);
-      transform: scale(1.05);
-    }
-    60% {
-      background-color: var(--hover-color-button);
-      border-color: var(--hover-color-button);
-      transform: scale(1.06);
-    }
-    70% {
-      background-color: var(--hover-color-button);
-      border-color: var(--hover-color-button);
-      transform: scale(1.07);
-    }
-    80% {
-      background-color: var(--hover-color-button);
-      border-color: var(--hover-color-button);
-      transform: scale(1.08);
-    }
-    90% {
+    7%{
       background-color: var(--hover-color-button);
       border-color: var(--hover-color-button);
       transform: scale(1.09);
     }
+    25% {
+      background-color: var(--hover-color-button);
+      border-color: var(--hover-color-button);
+    }
+    55% {
+      background-color: var(--hover-color-button);
+      border-color: var(--hover-color-button);
+      transform: scale(1);
+    }
+    75% {
+      background-color: var(--hover-color-button);
+      border-color: var(--hover-color-button);
+      transform: scale(1.03);
+    }
     100% {
       background-color: var(--hover-color-button);
       border-color: var(--hover-color-button);
-      transform: scale(1.1);
     }
   }
   animation: spring $duration;
@@ -121,9 +93,9 @@
     padding: 0px;
     border-radius: 0.25rem;
     transform: none;
-    transition: all 0.2s ease-in-out 0.025s;
+    transition: all 0.7s ease-in-out 0.025s;
     &:hover {
-      transform: scale(1.01);
+      transform: scale(1.05);
       @include spring-animation;
       background-color: var(--hover-color-button);
       border-color: var(--hover-color-button);

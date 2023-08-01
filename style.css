@@ -58,6 +58,7 @@ a {
   color: inherit;
 }
 
+/* colors */
 /* font sizing */
 /* Animaciones del button: */
 /* 1. Animación vibrato */
@@ -100,11 +101,11 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   padding: 0px;
   border-radius: 0.25rem;
   transform: none;
-  transition: all 0.2s ease-in-out 0.025s;
+  transition: all 0.7s ease-in-out 0.025s;
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a a.container_div-img-span div.button_color:hover {
-  transform: scale(1.01);
-  animation: spring 1s;
+  transform: scale(1.05);
+  animation: spring 0.5s;
   background-color: var(--hover-color-button);
   border-color: var(--hover-color-button);
 }
@@ -112,57 +113,29 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   0% {
     background-color: var(--hover-color-button);
     border-color: var(--hover-color-button);
-    transform: scale(1);
   }
-  10% {
-    background-color: var(--hover-color-button);
-    border-color: var(--hover-color-button);
-    transform: scale(1.01);
-  }
-  20% {
-    background-color: var(--hover-color-button);
-    border-color: var(--hover-color-button);
-    transform: scale(1.02);
-  }
-  30% {
-    background-color: var(--hover-color-button);
-    border-color: var(--hover-color-button);
-    transform: scale(1.03);
-  }
-  40% {
-    background-color: var(--hover-color-button);
-    border-color: var(--hover-color-button);
-    transform: scale(1.04);
-  }
-  50% {
-    background-color: var(--hover-color-button);
-    border-color: var(--hover-color-button);
-    transform: scale(1.05);
-  }
-  60% {
-    background-color: var(--hover-color-button);
-    border-color: var(--hover-color-button);
-    transform: scale(1.06);
-  }
-  70% {
-    background-color: var(--hover-color-button);
-    border-color: var(--hover-color-button);
-    transform: scale(1.07);
-  }
-  80% {
-    background-color: var(--hover-color-button);
-    border-color: var(--hover-color-button);
-    transform: scale(1.08);
-  }
-  90% {
+  7% {
     background-color: var(--hover-color-button);
     border-color: var(--hover-color-button);
     transform: scale(1.09);
   }
+  25% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+  55% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+    transform: scale(1);
+  }
+  75% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+    transform: scale(1.03);
+  }
   100% {
     background-color: var(--hover-color-button);
     border-color: var(--hover-color-button);
-    transform: scale(1.1);
   }
 }
 section.main-container_div div.dimensions-container_div div.grid-container_h2-div-a a.container_div-img-span div.button_color:active {
@@ -438,6 +411,168 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
     border-bottom-color: var(--hover-color-button) !important;
   }
 }
+.online-store {
+  margin-left: 10.5rem;
+  margin-right: 10.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0px;
+}
+.online-store .imagen img {
+  width: 100%;
+  border-radius: 5px;
+}
+.online-store .titulo {
+  font-family: "Monserrat", sans-serif;
+  color: #484848;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.online-store .ending {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.online-store .ending p {
+  font-family: "Monserrat", sans-serif;
+  font-size: 20.5px;
+  color: #484848;
+  font-weight: 550;
+  width: 95%;
+}
+.online-store .ending button {
+  font-family: "Monserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  border-radius: 5px;
+  background-color: red;
+  padding: 15px 10px 15px 10px;
+  width: 180px;
+  border-width: 0px;
+  height: 50px;
+  margin-left: 10px;
+}
+.online-store .ending button:hover {
+  animation: spring 0.5s;
+  background-color: var(--hover-color-button);
+  border-color: var(--hover-color-button);
+}
+@keyframes spring {
+  0% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+  7% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+    transform: scale(1.09);
+  }
+  25% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+  55% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+    transform: scale(1);
+  }
+  75% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+    transform: scale(1.03);
+  }
+  100% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+}
+.online-store .ending button:active {
+  transform: scale(1);
+}
+
+.gaming-systems {
+  margin-left: 10.5rem;
+  margin-right: 10.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0px;
+}
+.gaming-systems .imagen img {
+  width: 100%;
+  border-radius: 5px;
+}
+.gaming-systems .titulo {
+  font-family: "Monserrat", sans-serif;
+  color: #484848;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.gaming-systems .ending {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.gaming-systems .ending p {
+  font-family: "Monserrat", sans-serif;
+  font-size: 20.5px;
+  color: #484848;
+  font-weight: 550;
+  width: 45%;
+}
+.gaming-systems .ending button {
+  font-family: "Monserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  border-radius: 5px;
+  background-color: red;
+  padding: 15px 10px 15px 10px;
+  width: 180px;
+  border-width: 0px;
+  height: 50px;
+  margin-left: 0;
+}
+.gaming-systems .ending button:hover {
+  animation: spring 0.5s;
+  background-color: var(--hover-color-button);
+  border-color: var(--hover-color-button);
+}
+@keyframes spring {
+  0% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+  7% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+    transform: scale(1.09);
+  }
+  25% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+  55% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+    transform: scale(1);
+  }
+  75% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+    transform: scale(1.03);
+  }
+  100% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+}
+.gaming-systems .ending button:active {
+  transform: scale(1);
+}
+
 /*******************************************************/
 div.hTynpQ {
   position: absolute;
@@ -905,7 +1040,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   margin-top: -25px;
 }
 .abajo-izquierda .button-available:hover {
-  animation: spring 1s;
+  animation: spring 0.5s;
   background-color: var(--hover-color-button);
   border-color: var(--hover-color-button);
 }
@@ -913,57 +1048,29 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   0% {
     background-color: var(--hover-color-button);
     border-color: var(--hover-color-button);
-    transform: scale(1);
   }
-  10% {
-    background-color: var(--hover-color-button);
-    border-color: var(--hover-color-button);
-    transform: scale(1.01);
-  }
-  20% {
-    background-color: var(--hover-color-button);
-    border-color: var(--hover-color-button);
-    transform: scale(1.02);
-  }
-  30% {
-    background-color: var(--hover-color-button);
-    border-color: var(--hover-color-button);
-    transform: scale(1.03);
-  }
-  40% {
-    background-color: var(--hover-color-button);
-    border-color: var(--hover-color-button);
-    transform: scale(1.04);
-  }
-  50% {
-    background-color: var(--hover-color-button);
-    border-color: var(--hover-color-button);
-    transform: scale(1.05);
-  }
-  60% {
-    background-color: var(--hover-color-button);
-    border-color: var(--hover-color-button);
-    transform: scale(1.06);
-  }
-  70% {
-    background-color: var(--hover-color-button);
-    border-color: var(--hover-color-button);
-    transform: scale(1.07);
-  }
-  80% {
-    background-color: var(--hover-color-button);
-    border-color: var(--hover-color-button);
-    transform: scale(1.08);
-  }
-  90% {
+  7% {
     background-color: var(--hover-color-button);
     border-color: var(--hover-color-button);
     transform: scale(1.09);
   }
+  25% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+  55% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+    transform: scale(1);
+  }
+  75% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+    transform: scale(1.03);
+  }
   100% {
     background-color: var(--hover-color-button);
     border-color: var(--hover-color-button);
-    transform: scale(1.1);
   }
 }
 .abajo-izquierda .button-available:active {
