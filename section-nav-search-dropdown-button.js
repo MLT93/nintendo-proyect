@@ -52,11 +52,17 @@ function myFunction() {
 /* Esperamos a que se cargue el DOM antes de asignar eventos */
 window.addEventListener("DOMContentLoaded", (event) => {
   console.log("DOM completamente cargado y procesado");
+
   /* Obtenemos referencias a los elementos del DOM */
   const menuBtnAbrir = document.getElementById("menu-abrir");
   const menuBtnCerrar = document.getElementById("menu-cerrar");
   const hTynpQ = document.getElementById("menu-search-dropdown");
   const headerRight = document.querySelector("div.header-right");
+  
+  /* Asignamos eventos a los botones */
+  menuBtnAbrir.addEventListener("click", abrirMenu);
+  menuBtnCerrar.addEventListener("click", cerrarMenu);
+
   /* Función para abrir el menú. Añadir onclick="abrirMenu()" para que el botón utilice la función */
   function abrirMenu() {
     menuBtnAbrir.classList.toggle("open");
@@ -64,6 +70,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     hTynpQ.classList.toggle("visible");
     headerRight.classList.toggle("no-visible");
   }
+
   /* Función para cerrar el menú. Añadir onclick="cerrarMenu()" para que el botón utilice la función */
   function cerrarMenu() {
     menuBtnAbrir.classList.toggle("open");
@@ -71,19 +78,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
     hTynpQ.classList.toggle("visible");
     headerRight.classList.toggle("no-visible");
   }
-  /* Asignamos eventos a los botones */
-  menuBtnAbrir.addEventListener("click", abrirMenu);
-  menuBtnCerrar.addEventListener("click", cerrarMenu);
 
-  // Agregamos un listener a todos los enlaces de tendencias
-  const linksTendencias = document.querySelectorAll(".hTynpQ .letters");
-  linksTendencias.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      // Evitamos que el enlace redirija
-      event.preventDefault();
-      // Mantenemos el menú abierto
-      abrirMenu();
-      // Realizamos cualquier otra acción que desees cuando se hace clic en un enlace de tendencia
-    });
-  });
+  abrirMenu();
 });

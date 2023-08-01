@@ -732,6 +732,17 @@ button.kxYHqG {
     transition: all 0.5s;
   }
 }
+button.button-dropdown-search {
+  opacity: 1;
+  color: var(--font-color-main);
+  border: none;
+  background: transparent;
+  padding: 0px;
+  margin-left: 16px;
+  cursor: pointer;
+  transition: opacity 200ms ease-in-out 25ms;
+}
+
 div.hTynpQ {
   display: none;
 }
