@@ -49,7 +49,7 @@ body {
   font-weight: 700;
   color: white;
   border-radius: 5px;
-  background-color: rgb(230, 0, 18);
+  background-color: red;
   padding: 15px 10px 15px 10px;
   width: 180px;
   border-width: 0px;
@@ -116,4 +116,6 @@ body {
   color: rgb(125, 125, 125);
   padding: 3px 0px 0px;
   font-family: "Monserrat", sans-serif;
-}/*# sourceMappingURL=main-section.css.map */
+}
+
+/*# sourceMappingURL=main-section.css.map */
