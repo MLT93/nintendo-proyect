@@ -1,0 +1,84 @@
+.card-digital-releases {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: gray 1px solid;
+  width: 255px;
+  height: 338px;
+  border-radius: 3px;
+}
+.card-digital-releases .imagen-disney {
+  width: 259px;
+  height: 146px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin-top: -15px;
+}
+.card-digital-releases .encabezado {
+  display: flex;
+  flex-direction: column;
+}
+.card-digital-releases .titulo-card {
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 70px;
+  color: rgb(72, 72, 72);
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.card-digital-releases .fecha-card {
+  font-size: 13px;
+  margin-top: -10px;
+  color: rgb(147, 147, 147);
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.card-digital-releases .cuadrado-card-disney {
+  background-color: rgb(230, 0, 18);
+  margin-right: 181px;
+  margin-top: 15px;
+  width: 45.56px;
+  height: 15px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 2px;
+  border-radius: 0.25rem;
+}
+.card-digital-releases .precio-card {
+  margin-right: 181px;
+  color: rgb(72, 72, 72);
+}
+
+.footer-card-digital-releases {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
+  margin-top: -10px;
+}
+
+.barra-roja {
+  background-color: rgb(230, 0, 18);
+  width: 1px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+.nintendo-switch {
+  color: rgb(101, 101, 101);
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.corazon-normal {
+  color: rgb(230, 0, 18);
+}
+.corazon-normal:hover {
+  color: rgb(172, 0, 13);
+}
+
+/*# sourceMappingURL=card-disney.css.map */
