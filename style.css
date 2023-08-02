@@ -1194,6 +1194,197 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   margin-block: 0px;
 }
 
+.featured-section {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0px;
+}
+.featured-section .featured-container {
+  position: relative;
+}
+.featured-section .featured-container .imagen img {
+  width: 100%;
+  border-radius: 5px;
+}
+.featured-section .featured-container .featured-secondTitle {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 2rem;
+  justify-items: start;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  scroll-margin-top: 120px;
+}
+.featured-section .featured-container .featured-secondTitle *,
+.featured-section .featured-container .featured-secondTitle ::before,
+.featured-section .featured-container .featured-secondTitle ::after {
+  box-sizing: border-box;
+}
+.featured-section .featured-container .featured-secondTitle p {
+  font-family: "Monserrat", sans-serif;
+  font-size: 20.5px;
+  color: #484848;
+  font-weight: 550;
+  width: 737px;
+}
+.featured-section .featured-container .featured-secondTitle button {
+  font-family: "Monserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  border-radius: 5px;
+  background-color: var(--color-button);
+  padding: 15px 10px 15px 10px;
+  width: 180px;
+  border-width: 0px;
+  height: 50px;
+  margin-left: 0;
+}
+.featured-section .featured-container .featured-secondTitle button:hover {
+  animation: spring 0.5s;
+  background-color: var(--hover-color-button);
+  border-color: var(--hover-color-button);
+}
+@keyframes spring {
+  0% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+  7% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+    transform: scale(1.07);
+  }
+  25% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+  55% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+    transform: scale(1);
+  }
+  75% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+    transform: scale(1.03);
+  }
+  100% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+}
+.featured-section .featured-container .featured-secondTitle button:active {
+  transform: scale(1);
+}
+.featured-section .featured-container .featured-secondTitle .featured-mildfantasy {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  min-height: 5.25rem;
+  gap: 0.75rem;
+}
+.featured-section .featured-container .featured-carrousel {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.featured-section .featured-container .featured-carrousel .featured-carrousel-display {
+  display: flex;
+  flex-direction: row;
+  margin-right: 6rem;
+  justify-content: left;
+}
+.featured-section .featured-container .featured-carrousel .featured-carrousel-display .featured-carrousel-card {
+  margin-top: 0px;
+  max-width: 16.375rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.25rem;
+  border-color: rgb(218, 218, 218);
+  border-width: 1px 1px 0px;
+}
+.featured-section .featured-container .titulo {
+  font-family: "Monserrat", sans-serif;
+  color: #484848;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.featured-section .featured-container .ending {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.featured-section .featured-container .ending p {
+  font-family: "Monserrat", sans-serif;
+  font-size: 20.5px;
+  color: #484848;
+  font-weight: 550;
+  width: 45%;
+}
+.featured-section .featured-container .ending button {
+  font-family: "Monserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  border-radius: 5px;
+  background-color: red;
+  padding: 15px 10px 15px 10px;
+  width: 180px;
+  border-width: 0px;
+  height: 50px;
+  margin-left: 0;
+}
+.featured-section .featured-container .ending button:hover {
+  animation: spring 0.5s;
+  background-color: var(--hover-color-button);
+  border-color: var(--hover-color-button);
+}
+@keyframes spring {
+  0% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+  7% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+    transform: scale(1.07);
+  }
+  25% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+  55% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+    transform: scale(1);
+  }
+  75% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+    transform: scale(1.03);
+  }
+  100% {
+    background-color: var(--hover-color-button);
+    border-color: var(--hover-color-button);
+  }
+}
+.featured-section .featured-container .ending button:active {
+  transform: scale(1);
+}
+
 .seccion--roja {
   background-color: #e60012;
   display: flex;
