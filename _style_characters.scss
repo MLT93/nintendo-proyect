@@ -4,9 +4,7 @@
     position: relative;
     width: 100%;  
     .container{
-        width: 96%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
         @include dsp(flex,none,center,center);
         .container-df{
             @include dsp(flex,column);            

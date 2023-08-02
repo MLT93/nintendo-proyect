@@ -1,3 +1,12 @@
+section.section-cards{
+  position: relative;
+  /* @media queries 2rem */
+  padding-top: 3rem;
+  /* @media queries 2rem */
+  padding-bottom: 3rem;
+  width: 100%;
+  scroll-margin-top: 120px;
+}
 section.main-container_div {
   position: relative;
   /* @media queries 2rem */

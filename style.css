@@ -937,6 +937,16 @@ div.header-right.visible {
 }
 
 /*******************************************************/
+section.section-cards {
+  position: relative;
+  /* @media queries 2rem */
+  padding-top: 3rem;
+  /* @media queries 2rem */
+  padding-bottom: 3rem;
+  width: 100%;
+  scroll-margin-top: 120px;
+}
+
 section.main-container_div {
   position: relative;
   /* @media queries 2rem */
@@ -1106,9 +1116,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   width: 100%;
 }
 .section-characters .container {
-  width: 96%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   display: flex;
   flex-direction: none;
   justify-content: center;
