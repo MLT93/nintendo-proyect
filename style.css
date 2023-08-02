@@ -412,8 +412,8 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   }
 }
 .online-store {
-  margin-left: 10.5rem;
-  margin-right: 10.5rem;
+  /*     margin-left: 10.5rem;
+      margin-right: 10.5rem; */
   display: flex;
   flex-direction: column;
   padding: 48px 0px;
@@ -493,8 +493,8 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
 }
 
 .gaming-systems {
-  margin-left: 10.5rem;
-  margin-right: 10.5rem;
+  /*     margin-left: 10.5rem;
+      margin-right: 10.5rem; */
   display: flex;
   flex-direction: column;
   padding: 48px 0px;
