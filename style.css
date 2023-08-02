@@ -1386,6 +1386,58 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   transform: scale(1);
 }
 
+section.digital-best-sellers-and-new-releases-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+  width: 100%;
+}
+section.digital-best-sellers-and-new-releases-section div.container-margin-bottom_div-span-div {
+  margin-bottom: 2rem;
+  /*     div. {
+        difplay: flex;
+      } */
+}
+section.digital-best-sellers-and-new-releases-section div.container-margin-bottom_div-span-div div.flex-container_h2-a {
+  display: flex;
+  flex-flow: column wrap;
+}
+section.digital-best-sellers-and-new-releases-section div.container-margin-bottom_div-span-div div.flex-container_h2-a h2.title_letters {
+  display: flex;
+  margin-right: 1rem;
+  margin-bottom: 0px;
+  text-align: initial;
+  padding-right: 1rem;
+  border-right: 1px solid rgb(218, 218, 218);
+  font-weight: 700;
+  margin-block: 0px;
+  line-height: 1.35;
+  margin: 0px 0px 1em;
+  font-size: var(--font-size-xl);
+}
+section.digital-best-sellers-and-new-releases-section div.container-margin-bottom_div-span-div div.flex-container_h2-a a.letter-link {
+  display: flex;
+}
+section.digital-best-sellers-and-new-releases-section div.container-margin-bottom_div-span-div div.flex-container_h2-a a.letter-link span.letters_link-content {
+  background: transparent;
+  margin: 0px;
+  border: 0px;
+  line-height: 1.4;
+  border-radius: 0.25rem;
+  display: inline-block;
+  color: rgb(230, 0, 18);
+  box-shadow: rgba(172, 0, 13, 0) 0px 0px 0px 4px;
+  transition: box-shadow 200ms ease-in-out 25ms;
+  font-size: var(--font-size-m);
+}
+section.digital-best-sellers-and-new-releases-section div.container-margin-bottom_div-span-div span.space-of-spaced {
+  display: block;
+  width: 1rem;
+  min-width: 1rem;
+  height: 1rem;
+  min-height: 1rem;
+}
+
 .seccion--roja {
   background-color: #e60012;
   display: flex;
