@@ -1205,6 +1205,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
 .featured-section .featured-container .imagen img {
   width: 100%;
   border-radius: 5px;
+  object-fit: cover;
 }
 .featured-section .featured-container .featured-secondTitle {
   position: relative;
@@ -1332,7 +1333,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   font-size: 20.5px;
   color: #484848;
   font-weight: 550;
-  width: 45%;
+  width: 100%;
 }
 .featured-section .featured-container .ending button {
   font-family: "Monserrat", sans-serif;
