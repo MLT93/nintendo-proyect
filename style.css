@@ -1012,7 +1012,7 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
 }
 .main-section .imagen .imagen-pimkin {
   margin-top: -465px;
-  width: 87rem;
+  width: 95rem;
   height: 520px;
   border-radius: 0.25rem;
 }
@@ -1029,7 +1029,6 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   display: flex;
   gap: 3rem;
   justify-content: flex-end;
-  flex-wrap: wrap;
   align-items: center;
   margin-left: 2rem;
 }
@@ -1093,8 +1092,8 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
 
 .abajo-derecha {
   display: flex;
-  gap: 2rem;
-  margin-left: 18rem;
+  gap: 1rem;
+  margin-left: 19rem;
 }
 .abajo-derecha .ESRB {
   height: 70px;
