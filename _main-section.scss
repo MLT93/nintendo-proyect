@@ -12,6 +12,8 @@
     align-items: center;
     justify-content: center;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 
     .imagen-flores {
       width: 100%;
@@ -21,9 +23,8 @@
 
     .imagen-pimkin {
       margin-top: -465px;
-      width: 67.3rem;
+      width: 87rem;
       height: 520px;
-      margin-left: 34px;
       border-radius: 0.25rem;
     }
   }
@@ -32,20 +33,21 @@
 // Parte de abajo
 
 .parte-abajo {
-  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 35px;
+  margin-top: 4rem;
+  justify-content: baseline;
 }
 
 .abajo-izquierda {
-  width: 100%;
+  width: 55%;
   display: flex;
-  gap: 20px;
+  gap: 3rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   align-items: center;
-  margin-left: 10px;
-
+  margin-left: 2rem;
+  
   h2 {
     font-size: 28px;
     color: rgb(72, 72, 72);
@@ -53,6 +55,8 @@
   }
 
   .button-available {
+    display: flex;
+    justify-content: center;
     font-size: 18px;
     font-weight: 700;
     color: white;
@@ -78,8 +82,8 @@
 
 .abajo-derecha {
   display: flex;
-  gap: 13px;
-  margin-right: 9px;
+  gap: 2rem;
+  margin-left: 18rem;
   
 
   .ESRB {

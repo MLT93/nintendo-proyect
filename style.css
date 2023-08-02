@@ -992,6 +992,8 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   align-items: center;
   justify-content: center;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 .main-section .imagen .imagen-flores {
   width: 100%;
@@ -1000,26 +1002,26 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
 }
 .main-section .imagen .imagen-pimkin {
   margin-top: -465px;
-  width: 67.3rem;
+  width: 87rem;
   height: 520px;
-  margin-left: 34px;
   border-radius: 0.25rem;
 }
 
 .parte-abajo {
-  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 35px;
+  margin-top: 4rem;
+  justify-content: baseline;
 }
 
 .abajo-izquierda {
-  width: 100%;
+  width: 55%;
   display: flex;
-  gap: 20px;
+  gap: 3rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   align-items: center;
-  margin-left: 10px;
+  margin-left: 2rem;
 }
 .abajo-izquierda h2 {
   font-size: 28px;
@@ -1027,6 +1029,8 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
   font-family: "Monserrat", sans-serif;
 }
 .abajo-izquierda .button-available {
+  display: flex;
+  justify-content: center;
   font-size: 18px;
   font-weight: 700;
   color: white;
@@ -1079,8 +1083,8 @@ section.main-container_div div.dimensions-container_div div.grid-container_h2-di
 
 .abajo-derecha {
   display: flex;
-  gap: 13px;
-  margin-right: 9px;
+  gap: 2rem;
+  margin-left: 18rem;
 }
 .abajo-derecha .ESRB {
   height: 70px;
