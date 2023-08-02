@@ -31,7 +31,8 @@ body {
   font-weight: 700;
 }
 .enlaces h2 a:hover {
-  text-decoration: underline var(--hover-color-button);
+  -webkit-text-decoration: underline var(--hover-color-button);
+          text-decoration: underline var(--hover-color-button);
 }
 .enlaces ul {
   list-style: none;
@@ -110,6 +111,4 @@ body {
   color: #dbdbdb;
   font-weight: 700;
   flex-grow: 2;
-}
-
-/*# sourceMappingURL=footer-nintendo.css.map */
+}/*# sourceMappingURL=footer-nintendo.css.map */
