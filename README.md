@@ -45,7 +45,3 @@ Rolling Stone ([https://www.rollingstone.com](https://www.rollingstone.com/))
   ▫    Cómo se hacen comentarios con ejemplos en JavaScript?
   
   https://jsdoc.app/tags-example.html
-  
-### Link al repositorio de desarrollo del proyecto ✅
-
-  ▫    https://github.com/MLT93/nintendo-proyect/tree/development
